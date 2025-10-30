@@ -1,0 +1,28 @@
+:root {
+    --background: rgb(240, 128, 128); /* Soft red background for buttons and inner text blocks (.blok) */
+    --text: rgb(50, 50, 50); /* Dark gray text color for all text except navigation links */
+    --button-border: rgb(255, 165, 0); /* Muted orange border color for buttons */
+    --dropdown-hover: rgb(255, 223, 88); /* Soft yellow hover color for dropdown items */
+    --main-background: linear-gradient(180deg, rgb(240, 128, 128), rgb(255, 165, 0), rgb(255, 223, 88), rgb(144, 238, 144), rgb(173, 216, 230), rgb(186, 85, 211)); /* Subtle rainbow gradient for the main content */
+    --scrollbar-track: rgb(173, 216, 230); /* Light blue scrollbar track color (background) */
+    --scrollbar-thumb: rgb(186, 85, 211); /* Soft violet scrollbar thumb color (the moving part) */
+    --scrollbar-thumb-hover: rgb(144, 238, 144); /* Light green scrollbar thumb color when hovered */
+    --nav-background: rgb(144, 238, 144); /* Light green background for the navigation bar */
+    --nav-border: rgb(255, 165, 0); /* Muted orange border-bottom color for the navigation bar */
+    --link-hover-background: rgb(255, 223, 88); /* Soft yellow background color for navigation links on hover */
+    --link-hover-text: rgb(240, 128, 128); /* Soft red text color for navigation links on hover */
+    --ban-background: linear-gradient(90deg, rgb(240, 128, 128), rgb(255, 165, 0), rgb(255, 223, 88), rgb(144, 238, 144), rgb(173, 216, 230), rgb(186, 85, 211)); /* Horizontal subtle rainbow gradient for the banner */
+    --ban-gradient: linear-gradient(0deg, rgb(240, 128, 128) 0%, rgb(255, 165, 0) 25%, rgb(255, 223, 88) 50%, rgb(144, 238, 144) 75%, rgb(173, 216, 230) 100%); /* Vertical subtle rainbow gradient for the banner */
+    --text-block-background: rgb(255, 223, 88); /* Soft yellow background color for text blocks */
+    --text-block-border: rgb(255, 165, 0); /* Muted orange border color for text blocks */
+    --button-gradient-start: rgb(240, 128, 128); /* Start color for button gradient */
+    --button-gradient-end: rgb(255, 165, 0); /* End color for button gradient */
+    --button-hover-gradient-start: rgb(255, 223, 88); /* Start color for button gradient on hover */
+    --button-hover-gradient-end: rgb(144, 238, 144); /* End color for button gradient on hover */
+    --ban-text-color: rgb(50, 50, 50); /* Dark gray text color for the banner text */
+    --box-shadow-color: rgba(240, 128, 128, 0.5); /* Soft red box shadow color for text blocks and buttons */
+    --button-hover-shadow: rgba(255, 165, 0, 0.6); /* Muted orange box shadow color for buttons on hover */
+    --nav-text: rgb(50, 50, 50); /* Dark gray text color for navigation links */
+    --link: #fffb00; /* Link color in the text */
+    --link-hover: #ced100; /* Link color in the text when hovered */
+}

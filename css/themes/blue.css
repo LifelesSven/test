@@ -1,0 +1,28 @@
+:root {
+    --background: rgb(34, 34, 85); /* Background for buttons and inner text blocks (.blok) */
+    --text: rgb(200, 200, 230); /* Text color for all text except navigation links */
+    --button-border: rgb(152, 152, 255); /* Border color for buttons */
+    --dropdown-hover: rgb(40, 40, 110); /* Hover color for dropdown items */
+    --main-background: #040425; /* Background for the main content (under the banner and behind text blocks) */
+    --scrollbar-track: #000068; /* Scrollbar track color (background) */
+    --scrollbar-thumb: #000096; /* Scrollbar thumb color (the moving part) */
+    --scrollbar-thumb-hover: #00007a; /* Scrollbar thumb color when hovered */
+    --nav-background: #05055b; /* Background for the navigation bar */
+    --nav-border: #000042; /* Border-bottom color for the navigation bar */
+    --link-hover-background: #00004d; /* Background color for navigation links on hover */
+    --link-hover-text: #0000ff; /* Fully visible blue text color for navigation links on hover */
+    --ban-background: rgb(0, 0, 62); /* Background color for the banner */
+    --ban-gradient: linear-gradient(0deg, rgb(0, 0, 58) 0%, rgb(0, 0, 36) 100%); /* Gradient background for the banner */
+    --text-block-background: rgb(14, 14, 56); /* Background color for text blocks */
+    --text-block-border: #000042; /* Border color for text blocks */
+    --button-gradient-start: rgb(50, 50, 120); /* Start color for button gradient */
+    --button-gradient-end: rgb(30, 30, 90); /* End color for button gradient */
+    --button-hover-gradient-start: rgb(60, 60, 150); /* Start color for button gradient on hover */
+    --button-hover-gradient-end: rgb(40, 40, 110); /* End color for button gradient on hover */
+    --ban-text-color: rgb(55, 55, 194); /* Fully visible blue text color for the banner text */
+    --box-shadow-color: rgba(64, 64, 202, 0.5); /* Box shadow color for text blocks and buttons */
+    --button-hover-shadow: rgba(0, 0, 255, 0.6); /* Pure blue box shadow color for buttons on hover */
+    --nav-text: rgb(255, 255, 255); /* Text color for navigation links */
+    --link: #756dbb; /* Link color in the text */
+    --link-hover: #9999bb; /* Link color in the text when hovered */
+}

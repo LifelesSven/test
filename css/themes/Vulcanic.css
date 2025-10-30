@@ -1,0 +1,28 @@
+:root {
+    --background: rgb(117, 0, 0); /* Dark red background for buttons and inner text blocks (.blok) */
+    --text: rgb(220, 220, 220); /* Light gray text color for all text except navigation links */
+    --button-border: rgb(255, 69, 0); /* Fiery orange-red border color for buttons */
+    --dropdown-hover: rgb(178, 34, 34); /* Deep red hover color for dropdown items */
+    --main-background: #1a1a1a; /* Ash black background for the main content (under the banner and behind text blocks) */
+    --scrollbar-track: #2b2b2b; /* Dark gray scrollbar track color (background) */
+    --scrollbar-thumb: #8b0000; /* Dark red scrollbar thumb color (the moving part) */
+    --scrollbar-thumb-hover: #ff4500; /* Fiery orange-red scrollbar thumb color when hovered */
+    --nav-background: #0f0f0f; /* Black background for the navigation bar */
+    --nav-border: #8b0000; /* Dark red border-bottom color for the navigation bar */
+    --link-hover-background: #8b0000; /* Dark red background color for navigation links on hover */
+    --link-hover-text: #ff6347; /* Tomato red text color for navigation links on hover */
+    --ban-background: linear-gradient(90deg, rgb(139, 0, 0), rgb(178, 34, 34), rgb(255, 69, 0)); /* Volcanic red gradient for the banner */
+    --ban-gradient: linear-gradient(0deg, rgb(139, 0, 0) 0%, rgb(178, 34, 34) 50%, rgb(255, 69, 0) 100%); /* Vertical volcanic red gradient for the banner */
+    --text-block-background: rgb(50, 0, 0); /* Dark volcanic red background color for text blocks */
+    --text-block-border: #8b0000; /* Dark red border color for text blocks */
+    --button-gradient-start: rgb(178, 34, 34); /* Start color for button gradient */
+    --button-gradient-end: rgb(139, 0, 0); /* End color for button gradient */
+    --button-hover-gradient-start: rgb(255, 69, 0); /* Start color for button gradient on hover */
+    --button-hover-gradient-end: rgb(178, 34, 34); /* End color for button gradient on hover */
+    --ban-text-color: rgb(255, 255, 255); /* White text color for the banner text */
+    --box-shadow-color: rgba(139, 0, 0, 0.5); /* Dark red box shadow color for text blocks and buttons */
+    --button-hover-shadow: rgba(255, 69, 0, 0.6); /* Fiery orange-red box shadow color for buttons on hover */
+    --nav-text: rgb(220, 220, 220); /* Light gray text color for navigation links */
+    --link: #f6ebcd; /* Link color in the text */
+    --link-hover: #dbd2ba; /* Link color in the text when hovered */
+}

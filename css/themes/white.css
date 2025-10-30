@@ -1,0 +1,28 @@
+:root {
+    --background: rgb(240, 240, 240); /* Background for buttons and inner text blocks (.blok) */
+    --text: rgb(50, 50, 50); /* Text color for all text except navigation links */
+    --button-border: rgb(200, 200, 200); /* Border color for buttons */
+    --dropdown-hover: rgb(220, 220, 220); /* Hover color for dropdown items */
+    --main-background: #ffffff; /* Background for the main content (under the banner and behind text blocks) */
+    --scrollbar-track: #e0e0e0; /* Scrollbar track color (background) */
+    --scrollbar-thumb: #c0c0c0; /* Scrollbar thumb color (the moving part) */
+    --scrollbar-thumb-hover: #a0a0a0; /* Scrollbar thumb color when hovered */
+    --nav-background: #f8f8f8; /* Background for the navigation bar */
+    --nav-border: #d0d0d0; /* Border-bottom color for the navigation bar */
+    --link-hover-background: #e8e8e8; /* Background color for navigation links on hover */
+    --link-hover-text: #000000; /* Fully visible black text color for navigation links on hover */
+    --ban-background: rgb(245, 245, 245); /* Background color for the banner */
+    --ban-gradient: linear-gradient(0deg, rgb(240, 240, 240) 0%, rgb(220, 220, 220) 100%); /* Gradient background for the banner */
+    --text-block-background: rgb(250, 250, 250); /* Background color for text blocks */
+    --text-block-border: #d0d0d0; /* Border color for text blocks */
+    --button-gradient-start: rgb(230, 230, 230); /* Start color for button gradient */
+    --button-gradient-end: rgb(200, 200, 200); /* End color for button gradient */
+    --button-hover-gradient-start: rgb(240, 240, 240); /* Start color for button gradient on hover */
+    --button-hover-gradient-end: rgb(220, 220, 220); /* End color for button gradient on hover */
+    --ban-text-color: rgb(30, 30, 30); /* Fully visible dark gray text color for the banner text */
+    --box-shadow-color: rgba(0, 0, 0, 0.1); /* Light gray box shadow color for text blocks and buttons */
+    --button-hover-shadow: rgba(0, 0, 0, 0.2); /* Slightly darker gray box shadow color for buttons on hover */
+    --nav-text: rgb(50, 50, 50); /* Text color for navigation links */
+    --link: #585858; /* Link color in the text */
+    --link-hover: #252525; /* Link color in the text when hovered */
+}

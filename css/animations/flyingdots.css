@@ -1,0 +1,637 @@
+.dotWrapper {
+  position: absolute;
+}
+.dotWrapper-1 {
+  top: 42.0351409391%;
+  left: 99.5274799523%;
+  animation: flying 49.5760512872s ease-in-out -4.674514672s infinite alternate;
+}
+.dotWrapper-2 {
+  top: 88.7694614478%;
+  left: 97.7575259879%;
+  animation: flying 35.3979023842s ease-in-out -9.525705908s infinite alternate;
+}
+.dotWrapper-3 {
+  top: 37.5563906584%;
+  left: 49.928452854%;
+  animation: flying 47.6211474701s ease-in-out -5.691329702s infinite alternate;
+}
+.dotWrapper-4 {
+  top: 22.1259366658%;
+  left: 28.5717790819%;
+  animation: flying 29.1691933444s ease-in-out -6.6109964946s infinite alternate;
+}
+.dotWrapper-5 {
+  top: 59.5467737484%;
+  left: 81.1921238206%;
+  animation: flying 30.4338966951s ease-in-out -2.9468222789s infinite alternate;
+}
+.dotWrapper-6 {
+  top: 6.7657311371%;
+  left: 70.8281896578%;
+  animation: flying 47.9912899089s ease-in-out -4.1096703112s infinite alternate;
+}
+.dotWrapper-7 {
+  top: 34.6888418154%;
+  left: 14.8578465%;
+  animation: flying 45.8045135731s ease-in-out -8.6525243611s infinite alternate;
+}
+.dotWrapper-8 {
+  top: 26.573222416%;
+  left: 5.4131978436%;
+  animation: flying 42.45803017s ease-in-out -5.4848133927s infinite alternate;
+}
+.dotWrapper-9 {
+  top: 24.5077555115%;
+  left: 37.6272340371%;
+  animation: flying 28.2504895705s ease-in-out -6.1043034036s infinite alternate;
+}
+.dotWrapper-10 {
+  top: 57.1196292845%;
+  left: 6.8975005266%;
+  animation: flying 42.2313043257s ease-in-out -9.8205168318s infinite alternate;
+}
+.dotWrapper-11 {
+  top: 4.6862001188%;
+  left: 35.5745230158%;
+  animation: flying 26.3464906201s ease-in-out -4.3911409891s infinite alternate;
+}
+.dotWrapper-12 {
+  top: 86.1090048957%;
+  left: 4.3187079755%;
+  animation: flying 53.5114567754s ease-in-out -4.6855209368s infinite alternate;
+}
+.dotWrapper-13 {
+  top: 62.6813149887%;
+  left: 67.6328623999%;
+  animation: flying 23.3444530399s ease-in-out -0.9390779036s infinite alternate;
+}
+.dotWrapper-14 {
+  top: 27.5276630124%;
+  left: 87.8439006846%;
+  animation: flying 53.1626180402s ease-in-out -6.4422535047s infinite alternate;
+}
+.dotWrapper-15 {
+  top: 82.5242717322%;
+  left: 11.3670601118%;
+  animation: flying 58.3021297459s ease-in-out -9.4235398259s infinite alternate;
+}
+.dotWrapper-16 {
+  top: 55.380400337%;
+  left: 29.1215472816%;
+  animation: flying 53.467849625s ease-in-out -8.6838272195s infinite alternate;
+}
+.dotWrapper-17 {
+  top: 74.8614704468%;
+  left: 11.8049979705%;
+  animation: flying 45.870377708s ease-in-out -4.5668076661s infinite alternate;
+}
+.dotWrapper-18 {
+  top: 90.2329543259%;
+  left: 83.4451687351%;
+  animation: flying 56.3055980201s ease-in-out -9.4531567324s infinite alternate;
+}
+.dotWrapper-19 {
+  top: 37.6520085912%;
+  left: 78.5004304359%;
+  animation: flying 67.4817178109s ease-in-out -1.540668144s infinite alternate;
+}
+.dotWrapper-20 {
+  top: 96.4602574708%;
+  left: 77.9783792762%;
+  animation: flying 66.3942459994s ease-in-out -3.5223179322s infinite alternate;
+}
+.dotWrapper-21 {
+  top: 3.9234132644%;
+  left: 85.2704841479%;
+  animation: flying 23.3064112224s ease-in-out -4.3712492532s infinite alternate;
+}
+.dotWrapper-22 {
+  top: 23.9101477848%;
+  left: 62.1489527201%;
+  animation: flying 43.8189748452s ease-in-out -2.162406229s infinite alternate;
+}
+.dotWrapper-23 {
+  top: 41.0937589627%;
+  left: 41.4003591745%;
+  animation: flying 41.5751912147s ease-in-out -5.8495218409s infinite alternate;
+}
+.dotWrapper-24 {
+  top: 64.547583487%;
+  left: 43.4944933664%;
+  animation: flying 30.9383520296s ease-in-out -6.8825732516s infinite alternate;
+}
+.dotWrapper-25 {
+  top: 13.2141477643%;
+  left: 10.8571783392%;
+  animation: flying 39.2780872963s ease-in-out -9.0228421963s infinite alternate;
+}
+.dotWrapper-26 {
+  top: 56.3784364595%;
+  left: 76.0906356915%;
+  animation: flying 65.5211802283s ease-in-out -7.5002562062s infinite alternate;
+}
+.dotWrapper-27 {
+  top: 2.9141381309%;
+  left: 79.3143869607%;
+  animation: flying 31.2131652676s ease-in-out -2.764491684s infinite alternate;
+}
+.dotWrapper-28 {
+  top: 32.431893723%;
+  left: 90.2626697555%;
+  animation: flying 43.6393261029s ease-in-out -5.0037528482s infinite alternate;
+}
+.dotWrapper-29 {
+  top: 6.3211803402%;
+  left: 47.2957228512%;
+  animation: flying 23.3654181292s ease-in-out -3.7371411524s infinite alternate;
+}
+.dotWrapper-30 {
+  top: 20.8831629723%;
+  left: 17.1110978398%;
+  animation: flying 46.6466533494s ease-in-out -2.1512658368s infinite alternate;
+}
+.dotWrapper-31 {
+  top: 24.8580242903%;
+  left: 83.1737468318%;
+  animation: flying 54.5575651999s ease-in-out -8.3501430683s infinite alternate;
+}
+.dotWrapper-32 {
+  top: 24.1458538071%;
+  left: 3.2403055728%;
+  animation: flying 28.1857747503s ease-in-out -0.1854934036s infinite alternate;
+}
+.dotWrapper-33 {
+  top: 43.9021877814%;
+  left: 27.616145687%;
+  animation: flying 22.7933729955s ease-in-out -6.6565989079s infinite alternate;
+}
+.dotWrapper-34 {
+  top: 92.053215652%;
+  left: 82.7404335399%;
+  animation: flying 33.2746427204s ease-in-out -1.0503572727s infinite alternate;
+}
+.dotWrapper-35 {
+  top: 5.388904752%;
+  left: 63.7798015662%;
+  animation: flying 55.0886113281s ease-in-out -5.8300906682s infinite alternate;
+}
+.dotWrapper-36 {
+  top: 84.5771413634%;
+  left: 95.2941488125%;
+  animation: flying 23.0454763415s ease-in-out -5.2616470812s infinite alternate;
+}
+.dotWrapper-37 {
+  top: 15.3720386626%;
+  left: 7.3855244126%;
+  animation: flying 40.4752347759s ease-in-out -1.6036466658s infinite alternate;
+}
+.dotWrapper-38 {
+  top: 65.8244298851%;
+  left: 34.8822529119%;
+  animation: flying 38.0147032707s ease-in-out -8.1668637152s infinite alternate;
+}
+.dotWrapper-39 {
+  top: 14.3312417881%;
+  left: 22.5942495371%;
+  animation: flying 68.0289036538s ease-in-out -2.2038089309s infinite alternate;
+}
+.dotWrapper-40 {
+  top: 68.8787006158%;
+  left: 1.1463167106%;
+  animation: flying 66.2797425288s ease-in-out -4.8874981096s infinite alternate;
+}
+.dotWrapper-41 {
+  top: 15.5570900364%;
+  left: 21.5798258383%;
+  animation: flying 66.75087332s ease-in-out -6.9180207396s infinite alternate;
+}
+.dotWrapper-42 {
+  top: 7.5117246664%;
+  left: 11.6607436702%;
+  animation: flying 32.8271538604s ease-in-out -4.5159842816s infinite alternate;
+}
+.dotWrapper-43 {
+  top: 13.6196837096%;
+  left: 54.3347550068%;
+  animation: flying 52.4294630391s ease-in-out -0.1960589368s infinite alternate;
+}
+.dotWrapper-44 {
+  top: 98.5232834944%;
+  left: 78.1298899375%;
+  animation: flying 63.1305462712s ease-in-out -2.5648371386s infinite alternate;
+}
+.dotWrapper-45 {
+  top: 95.4368423427%;
+  left: 87.5065616514%;
+  animation: flying 49.065462959s ease-in-out -1.9979098809s infinite alternate;
+}
+.dotWrapper-46 {
+  top: 65.5936310758%;
+  left: 28.6669687802%;
+  animation: flying 47.2274935138s ease-in-out -5.9157458947s infinite alternate;
+}
+.dotWrapper-47 {
+  top: 64.520555488%;
+  left: 22.9577016375%;
+  animation: flying 46.6797726843s ease-in-out -5.0367524599s infinite alternate;
+}
+.dotWrapper-48 {
+  top: 29.6674101961%;
+  left: 83.0775781938%;
+  animation: flying 59.4757171455s ease-in-out -6.5442499203s infinite alternate;
+}
+.dotWrapper-49 {
+  top: 31.4638519569%;
+  left: 73.4094403202%;
+  animation: flying 23.2019137177s ease-in-out -6.987332224s infinite alternate;
+}
+.dotWrapper-50 {
+  top: 72.3990429216%;
+  left: 68.1940419386%;
+  animation: flying 45.0394292579s ease-in-out -6.0759898516s infinite alternate;
+}
+.dotWrapper-51 {
+  top: 23.6555175791%;
+  left: 55.4260378678%;
+  animation: flying 59.1212551192s ease-in-out -7.2951316806s infinite alternate;
+}
+.dotWrapper-52 {
+  top: 87.387767042%;
+  left: 5.0884531185%;
+  animation: flying 65.7631541647s ease-in-out -8.9440691646s infinite alternate;
+}
+.dotWrapper-53 {
+  top: 47.5580364135%;
+  left: 17.8968788947%;
+  animation: flying 47.4742594167s ease-in-out -2.4366266984s infinite alternate;
+}
+.dotWrapper-54 {
+  top: 51.4651947647%;
+  left: 29.1281924819%;
+  animation: flying 55.4990749751s ease-in-out -9.7979986925s infinite alternate;
+}
+.dotWrapper-55 {
+  top: 71.9667844097%;
+  left: 66.5310340415%;
+  animation: flying 57.4624829189s ease-in-out -7.0018871437s infinite alternate;
+}
+.dotWrapper-56 {
+  top: 40.7990413%;
+  left: 47.359986537%;
+  animation: flying 54.1678902448s ease-in-out -0.7276544228s infinite alternate;
+}
+.dotWrapper-57 {
+  top: 45.6737102365%;
+  left: 93.6780139319%;
+  animation: flying 22.0977948212s ease-in-out -2.2299073472s infinite alternate;
+}
+.dotWrapper-58 {
+  top: 35.6861527885%;
+  left: 3.4310542929%;
+  animation: flying 45.1200069454s ease-in-out -8.1816915849s infinite alternate;
+}
+.dotWrapper-59 {
+  top: 97.7807249044%;
+  left: 88.4160431159%;
+  animation: flying 20.3878420675s ease-in-out -8.2236494922s infinite alternate;
+}
+.dotWrapper-60 {
+  top: 80.8992152552%;
+  left: 18.8044947281%;
+  animation: flying 31.2170861648s ease-in-out -0.6424368604s infinite alternate;
+}
+.dotWrapper-61 {
+  top: 96.6407253578%;
+  left: 98.4766038379%;
+  animation: flying 22.6274503685s ease-in-out -7.0335951699s infinite alternate;
+}
+.dotWrapper-62 {
+  top: 77.1065574853%;
+  left: 91.0197449985%;
+  animation: flying 65.8583699231s ease-in-out -3.6590878591s infinite alternate;
+}
+.dotWrapper-63 {
+  top: 82.0152093857%;
+  left: 68.1238390549%;
+  animation: flying 66.0315023606s ease-in-out -0.6283406441s infinite alternate;
+}
+.dotWrapper-64 {
+  top: 65.225621369%;
+  left: 16.3747416113%;
+  animation: flying 39.7951073359s ease-in-out -7.8776365756s infinite alternate;
+}
+.dotWrapper-65 {
+  top: 4.7979655574%;
+  left: 14.0820166563%;
+  animation: flying 33.7572671792s ease-in-out -8.0177267601s infinite alternate;
+}
+.dotWrapper-66 {
+  top: 34.7508853642%;
+  left: 76.3818882835%;
+  animation: flying 27.2051986961s ease-in-out -6.6950670446s infinite alternate;
+}
+.dotWrapper-67 {
+  top: 66.795628895%;
+  left: 24.3964250598%;
+  animation: flying 23.3868582421s ease-in-out -1.2160029263s infinite alternate;
+}
+.dotWrapper-68 {
+  top: 52.1851609451%;
+  left: 51.6902131886%;
+  animation: flying 40.4234386178s ease-in-out -3.3596774692s infinite alternate;
+}
+.dotWrapper-69 {
+  top: 70.6298317164%;
+  left: 74.2499330248%;
+  animation: flying 67.1666215837s ease-in-out -2.7152073891s infinite alternate;
+}
+.dotWrapper-70 {
+  top: 19.7239314069%;
+  left: 19.2752516451%;
+  animation: flying 46.3017566304s ease-in-out -0.7826359755s infinite alternate;
+}
+.dotWrapper-71 {
+  top: 58.2050619711%;
+  left: 47.6598210141%;
+  animation: flying 22.950590106s ease-in-out -6.7523928701s infinite alternate;
+}
+.dotWrapper-72 {
+  top: 57.5461670754%;
+  left: 18.3427573102%;
+  animation: flying 53.3979612067s ease-in-out -0.6894869622s infinite alternate;
+}
+.dotWrapper-73 {
+  top: 93.9400034725%;
+  left: 90.392270967%;
+  animation: flying 28.0638244358s ease-in-out -7.5504709007s infinite alternate;
+}
+.dotWrapper-74 {
+  top: 87.8630724218%;
+  left: 89.461187732%;
+  animation: flying 42.3980454558s ease-in-out -2.9471491131s infinite alternate;
+}
+.dotWrapper-75 {
+  top: 84.7138164579%;
+  left: 58.4831935542%;
+  animation: flying 53.7391309869s ease-in-out -7.211171992s infinite alternate;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  background: var(--scrollbar-thumb-hover);
+  border-radius: 50%;
+}
+.dot-1 {
+  transform-origin: 9.0723830712px -7.6834813034px;
+  animation: rotating 18.8884008187s ease-in-out -7.9359013052s infinite;
+}
+.dot-2 {
+  transform-origin: 14.313849434px 7.6477780858px;
+  animation: rotating 23.1321801565s ease-in-out -9.564209718s infinite;
+}
+.dot-3 {
+  transform-origin: -2.5753252573px -3.8764448488px;
+  animation: rotating 10.6769472014s ease-in-out -7.220070281s infinite;
+}
+.dot-4 {
+  transform-origin: 14.6654125376px 10.4826523992px;
+  animation: rotating 22.7231348171s ease-in-out -6.1351107371s infinite;
+}
+.dot-5 {
+  transform-origin: -9.8515274263px -7.2513041526px;
+  animation: rotating 27.8935207145s ease-in-out -7.4908305371s infinite;
+}
+.dot-6 {
+  transform-origin: -5.0587797299px 4.998451265px;
+  animation: rotating 22.5023087715s ease-in-out -0.1360095006s infinite;
+}
+.dot-7 {
+  transform-origin: -7.7785266326px -0.4862327677px;
+  animation: rotating 18.1682948656s ease-in-out -8.0611906808s infinite;
+}
+.dot-8 {
+  transform-origin: -8.1546135678px 4.5983784722px;
+  animation: rotating 27.0511037771s ease-in-out -4.2057562938s infinite;
+}
+.dot-9 {
+  transform-origin: 2.3460593054px -13.9975730128px;
+  animation: rotating 16.1215110386s ease-in-out -5.3109321051s infinite;
+}
+.dot-10 {
+  transform-origin: -5.1854690987px 14.2650270392px;
+  animation: rotating 22.2418408727s ease-in-out -7.6957900824s infinite;
+}
+.dot-11 {
+  transform-origin: 5.2256298167px 4.7898397077px;
+  animation: rotating 18.9315854582s ease-in-out -9.3387224787s infinite;
+}
+.dot-12 {
+  transform-origin: 5.3874911751px 11.0223659202px;
+  animation: rotating 27.4536816461s ease-in-out -0.5082238298s infinite;
+}
+.dot-13 {
+  transform-origin: -12.2267981137px -10.1770431556px;
+  animation: rotating 23.3954777381s ease-in-out -0.8202416761s infinite;
+}
+.dot-14 {
+  transform-origin: -10.7578153726px 0.6052911121px;
+  animation: rotating 28.2123477015s ease-in-out -6.9884823208s infinite;
+}
+.dot-15 {
+  transform-origin: -11.9199361703px 1.3925438287px;
+  animation: rotating 13.1886189569s ease-in-out -1.9322878973s infinite;
+}
+.dot-16 {
+  transform-origin: 0.6455491192px 4.296137632px;
+  animation: rotating 26.0496829103s ease-in-out -9.0585154953s infinite;
+}
+.dot-17 {
+  transform-origin: 6.0567855488px -3.2853967438px;
+  animation: rotating 17.538890095s ease-in-out -2.9545840574s infinite;
+}
+.dot-18 {
+  transform-origin: 14.276985577px 1.2491983869px;
+  animation: rotating 28.1301179102s ease-in-out -9.907774474s infinite;
+}
+.dot-19 {
+  transform-origin: 6.753090521px -12.0726144224px;
+  animation: rotating 11.3448898534s ease-in-out -2.8262820914s infinite;
+}
+.dot-20 {
+  transform-origin: -2.9227803938px -2.9772752336px;
+  animation: rotating 17.0421489673s ease-in-out -7.6743197106s infinite;
+}
+.dot-21 {
+  transform-origin: 8.1197237359px -12.0550523604px;
+  animation: rotating 19.2342416416s ease-in-out -6.1798750663s infinite;
+}
+.dot-22 {
+  transform-origin: 13.7107195423px 3.1925684651px;
+  animation: rotating 15.1730231751s ease-in-out -6.0187915112s infinite;
+}
+.dot-23 {
+  transform-origin: -13.5762346406px -12.7604709138px;
+  animation: rotating 19.1784034135s ease-in-out -6.2133538416s infinite;
+}
+.dot-24 {
+  transform-origin: 11.3812864582px -3.7707107067px;
+  animation: rotating 28.5213430586s ease-in-out -8.806993159s infinite;
+}
+.dot-25 {
+  transform-origin: -9.1835570799px 13.0774493615px;
+  animation: rotating 27.9540234428s ease-in-out -8.59482865s infinite;
+}
+.dot-26 {
+  transform-origin: -4.5676745819px -2.8296312495px;
+  animation: rotating 15.9002911053s ease-in-out -2.5370352561s infinite;
+}
+.dot-27 {
+  transform-origin: 9.6402103444px -8.1963591865px;
+  animation: rotating 18.4704244523s ease-in-out -1.381587336s infinite;
+}
+.dot-28 {
+  transform-origin: -7.2157780304px 7.1323459319px;
+  animation: rotating 24.1637561357s ease-in-out -7.2912141084s infinite;
+}
+.dot-29 {
+  transform-origin: -9.8794767969px -12.7161599916px;
+  animation: rotating 17.7369817697s ease-in-out -8.7689978631s infinite;
+}
+.dot-30 {
+  transform-origin: -12.2342249952px 12.959203268px;
+  animation: rotating 12.0390197922s ease-in-out -2.4434122909s infinite;
+}
+.dot-31 {
+  transform-origin: -4.390375748px 8.7941147233px;
+  animation: rotating 14.3197289741s ease-in-out -3.4807510923s infinite;
+}
+.dot-32 {
+  transform-origin: 14.5689919807px -2.7902062562px;
+  animation: rotating 11.5199268525s ease-in-out -3.0790474526s infinite;
+}
+.dot-33 {
+  transform-origin: 13.3162927219px 2.8013453221px;
+  animation: rotating 21.9724869679s ease-in-out -2.9005876398s infinite;
+}
+.dot-34 {
+  transform-origin: 14.6875062312px 0.0218850623px;
+  animation: rotating 27.8145112981s ease-in-out -9.2519826113s infinite;
+}
+.dot-35 {
+  transform-origin: 8.5802978128px -0.2224494815px;
+  animation: rotating 24.2765641358s ease-in-out -7.3942857511s infinite;
+}
+.dot-36 {
+  transform-origin: -6.6384362674px -1.4828451626px;
+  animation: rotating 15.9691964872s ease-in-out -3.06183987s infinite;
+}
+.dot-37 {
+  transform-origin: -13.2220094547px 9.052806435px;
+  animation: rotating 10.3624243179s ease-in-out -9.0194692417s infinite;
+}
+.dot-38 {
+  transform-origin: 6.33729882px 0.4614116854px;
+  animation: rotating 19.636755722s ease-in-out -6.8846419851s infinite;
+}
+.dot-39 {
+  transform-origin: -13.9620538194px 2.2300528573px;
+  animation: rotating 24.6702483307s ease-in-out -6.6444307698s infinite;
+}
+.dot-40 {
+  transform-origin: 6.1824796444px 11.2782174509px;
+  animation: rotating 10.8284887523s ease-in-out -7.5595380884s infinite;
+}
+.dot-41 {
+  transform-origin: -8.0408432824px -7.8734217352px;
+  animation: rotating 18.4280477122s ease-in-out -4.5645369772s infinite;
+}
+.dot-42 {
+  transform-origin: 5.4388059482px 0.2127978834px;
+  animation: rotating 19.8931940003s ease-in-out -4.917896402s infinite;
+}
+.dot-43 {
+  transform-origin: 0.6834048227px 8.6707958882px;
+  animation: rotating 17.328033614s ease-in-out -0.0023753394s infinite;
+}
+.dot-44 {
+  transform-origin: 6.5501605964px 6.876760861px;
+  animation: rotating 11.4908125845s ease-in-out -6.6280639176s infinite;
+}
+.dot-45 {
+  transform-origin: -11.8600928705px 0.6204166026px;
+  animation: rotating 22.9776220919s ease-in-out -2.5275676133s infinite;
+}
+.dot-46 {
+  transform-origin: -6.1643705219px -5.4905996744px;
+  animation: rotating 20.6440462404s ease-in-out -7.1471183744s infinite;
+}
+.dot-47 {
+  transform-origin: 6.5412546793px 8.8866611641px;
+  animation: rotating 16.1629753085s ease-in-out -0.9860522861s infinite;
+}
+.dot-48 {
+  transform-origin: -14.4413930283px 6.3682057311px;
+  animation: rotating 17.0357892719s ease-in-out -8.9580011789s infinite;
+}
+.dot-49 {
+  transform-origin: 13.0575456948px -9.9446093188px;
+  animation: rotating 28.6965350353s ease-in-out -9.0853815785s infinite;
+}
+.dot-50 {
+  transform-origin: 14.0105221921px -4.7808871198px;
+  animation: rotating 28.2091529079s ease-in-out -0.5343362109s infinite;
+}
+
+@keyframes rotating {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  25%, 75% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+@keyframes flying {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(20px, 50px);
+  }
+  20% {
+    transform: translate(-30px, 10px);
+  }
+  30% {
+    transform: translate(10px, 60px);
+  }
+  40% {
+    transform: translate(50px, 0px);
+  }
+  50% {
+    transform: translate(-10px, -40px);
+  }
+  60% {
+    transform: translate(-40px, 20px);
+  }
+  70% {
+    transform: translate(30px, -30px);
+  }
+  80% {
+    transform: translate(0px, -60px);
+  }
+  90% {
+    transform: translate(40px, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}/*# sourceMappingURL=flyingdots.css.map */

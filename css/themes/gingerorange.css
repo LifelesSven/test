@@ -1,0 +1,28 @@
+:root {
+    --background: rgb(255, 109, 41); /* Rich red-orange background for buttons and inner text blocks (.blok) */
+    --text: rgb(130, 50, 10); /* Deep reddish-brown text color for all text except navigation links */
+    --button-border: rgb(255, 140, 60); /* Warm orange border color for buttons */
+    --dropdown-hover: rgb(255, 120, 40); /* Vibrant red-orange hover color for dropdown items */
+    --main-background: #ffd1af; /* Soft peachy-orange background for the main content (under the banner and behind text blocks) */
+    --scrollbar-track: #ffc4a3; /* Light orange scrollbar track color (background) */
+    --scrollbar-thumb: #ff8c42; /* Deep orange scrollbar thumb color (the moving part) */
+    --scrollbar-thumb-hover: #ff6f1f; /* Slightly darker red-orange scrollbar thumb color when hovered */
+    --nav-background: #ffb380; /* Warm orange background for the navigation bar */
+    --nav-border: #ff7f40; /* Deep orange border-bottom color for the navigation bar */
+    --link-hover-background: #ff9c66; /* Warm orange background color for navigation links on hover */
+    --link-hover-text: #b34700; /* Deep reddish-orange text color for navigation links on hover */
+    --ban-background: rgb(255, 120, 40); /* Vibrant red-orange background color for the banner */
+    --ban-gradient: linear-gradient(0deg, rgb(255, 100, 30) 0%, rgb(255, 80, 20) 100%); /* Gradient background for the banner */
+    --text-block-background: rgb(255, 180, 120); /* Warm orange background color for text blocks */
+    --text-block-border: #ff7f40; /* Deep orange border color for text blocks */
+    --button-gradient-start: rgb(255, 140, 60); /* Start color for button gradient */
+    --button-gradient-end: rgb(255, 94, 19); /* End color for button gradient */
+    --button-hover-gradient-start: rgb(255, 160, 80); /* Start color for button gradient on hover */
+    --button-hover-gradient-end: rgb(255, 120, 40); /* End color for button gradient on hover */
+    --ban-text-color: rgb(130, 50, 10); /* Deep reddish-brown text color for the banner text */
+    --box-shadow-color: rgba(255, 94, 19, 0.5); /* Rich red-orange box shadow color for text blocks and buttons */
+    --button-hover-shadow: rgba(255, 94, 19, 0.6); /* Rich red-orange box shadow color for buttons on hover */
+    --nav-text: rgb(130, 50, 10); /* Deep reddish-brown text color for navigation links */
+    --link: rgb(107, 36, 0); /* Link color in the text */
+    --link-hover: #252525; /* Link color in the text when hovered */
+}
