@@ -23,56 +23,66 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    let savedTheme = localStorage.getItem("selectedTheme");
+    const stylesheet = document.getElementById("themeStylesheet");
+    const links = document.querySelectorAll(".dropdown-content a");
+    const savedTheme = localStorage.getItem("selectedTheme");
 
     if (savedTheme) {
         // Apply the saved theme
-        document.getElementById("themeStylesheet").href = savedTheme;
+        stylesheet.href = savedTheme;
 
-        // Set the active class on the corresponding link
-        let links = document.querySelectorAll(".dropdown-content a");
+        // Set the active Tailwind classes on the corresponding link
         links.forEach(link => {
-            if (link.getAttribute("onclick").includes(savedTheme.split('/').pop())) {
-                link.classList.add("active");
+            link.classList.remove("bg-emerald-600", "text-white", "font-semibold");
+            link.classList.add("text-gray-200", "hover:bg-neutral-800");
+
+            const linkFile = link.getAttribute("onclick")?.match(/'(.+?)'/)?.[1];
+            if (linkFile && savedTheme.includes(linkFile)) {
+                link.classList.add("bg-emerald-600", "text-white", "font-semibold");
+                link.classList.remove("text-gray-200", "hover:bg-neutral-800");
             }
         });
     }
 });
 
 function toggleDropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    const dropdown = document.getElementById("myDropdown");
+    dropdown.classList.toggle("hidden");
 }
 
 function changeCSS(file, element) {
-    // Construct the full relative path
     const fullPath = `css/themes/${file}`;
-    
-    // Update the theme stylesheet
-    document.getElementById("themeStylesheet").href = fullPath;
+    const stylesheet = document.getElementById("themeStylesheet");
 
-    // Save the full path to localStorage
+    // Apply the new theme
+    stylesheet.href = fullPath;
+
+    // Save the theme in localStorage
     localStorage.setItem("selectedTheme", fullPath);
 
-    // Remove 'active' class from all links
-    let links = document.querySelectorAll(".dropdown-content a");
-    links.forEach(link => link.classList.remove("active"));
+    // Update active Tailwind classes
+    const links = document.querySelectorAll(".dropdown-content a");
+    links.forEach(link => {
+        link.classList.remove("bg-emerald-600", "text-white", "font-semibold");
+        link.classList.add("text-gray-200", "hover:bg-neutral-800");
+    });
 
-    // Add 'active' class to the clicked link
-    element.classList.add("active");
+    if (element) {
+        element.classList.add("bg-emerald-600", "text-white", "font-semibold");
+        element.classList.remove("text-gray-200", "hover:bg-neutral-800");
+    }
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        let dropdowns = document.getElementsByClassName("dropdown-content");
-        for (let i = 0; i < dropdowns.length; i++) {
-            let openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
+// Close dropdown when clicking outside
+window.addEventListener("click", function(event) {
+    const dropdown = document.getElementById("myDropdown");
+    const btn = document.querySelector(".dropbtn");
+
+    if (!btn.contains(event.target) && !dropdown.contains(event.target)) {
+        dropdown.classList.add("hidden");
     }
-};
+});
+
 
 // JavaScript to calculate and display age
 document.addEventListener("DOMContentLoaded", function () {

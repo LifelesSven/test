@@ -6,6 +6,7 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  color: var(--text);
 }
 
 ::-webkit-scrollbar {
@@ -197,29 +198,6 @@ h2 {
     background-color: var(--nav-background);
     border: 2px solid var(--button-border);
     color: var(--nav-text);
-  }
-
-
-  .navbar-toggler-icon::before,
-  .navbar-toggler-icon::after,
-  .navbar-toggler-icon span {
-    content: "";
-    display: block;
-    height: 3px;
-    background-color: var(--nav-text);
-    margin: 4px 0;
-    border-radius: 1px;
-  }
-
-  /* Needed for middle bar */
-  .navbar-toggler-icon span {
-    background-color: var(--nav-text);
-  }
-
-  /* Make hamburger icon 3 bars */
-  .navbar-toggler-icon {
-    position: relative;
-    padding: 5px;
   }
 }
 

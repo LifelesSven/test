@@ -55,13 +55,13 @@
                     </ul>
                 </div>
 
-                <div class="blok stwe">
+                <!-- <div class="blok stwe">
                     <h3>School Projecten</h3>
 
                     <div id="schoolProjectenCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
 
-                            <!-- Project 1: Bij Wies&Co -->
+                            <!-- Project 1: Bij Wies&Co 
                             <div class="carousel-item active">
                                 <div class="project-card">
                                     <h4>Bij Wies&Co Webshop</h4>
@@ -77,7 +77,7 @@
                                 </div>
                             </div>
 
-                            <!-- Future Project slot (just add more here as needed) -->
+                            <!-- Future Project slot (just add more here as needed) 
                             <div class="carousel-item">
                                 <div class="project-card">
                                     <h4>Huidig Project, Platenbaas</h4>
@@ -87,7 +87,7 @@
 
                         </div>
 
-                        <!-- Controls -->
+                        <!-- Controls 
                         <button class="carousel-control-prev" type="button" data-bs-target="#schoolProjectenCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Vorige</span>
@@ -97,11 +97,10 @@
                             <span class="visually-hidden">Volgende</span>
                         </button>
                     </div>
-                </div>
+                </div>-->
 
-            </div>
-
-            <a href="cv_mijnnaam.pdf" download class="btn-download">Download mijn CV</a>
+            </div> 
+            <a href="doc/sven.docx" download class="btn-download">Download mijn CV</a>
 
             <div class="quote">
                 "Je komt naar werk om te werken, en niet om niet te werken."

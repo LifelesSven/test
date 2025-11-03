@@ -19,7 +19,7 @@
                     <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="overmij.php">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="work.php">Work</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hobbies.php">Hobbies</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                 </ul>
             </div>
