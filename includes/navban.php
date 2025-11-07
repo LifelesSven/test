@@ -1,33 +1,31 @@
 <div class="wholenavban">
-    <!-- Bootstrap Navbar wrapper keeping your styles -->
-    <nav class="nav navbar navbar-expand-lg">
-        <div class="container-fluid">
+    <!-- Tailwind Navbar wrapper keeping your styles -->
+    <nav class="nav">
+        <div class="w-full max-w-7xl mx-auto px-4 flex items-center justify-between">
 
             <!-- Hamburger toggle button for mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="lg:hidden text-2xl" type="button" onclick="toggleMobileMenu()"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><span></span></span>
             </button>
 
-
-
             <!-- Collapsible content -->
-            <div class="collapse navbar-collapse navbar" id="navbarContent">
+            <div class="hidden lg:flex" id="navbarContent">
 
                 <!-- Your existing nav links -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="overmij.php">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="work.php">Work</a></li>
-                    <li class="nav-item"><a class="nav-link" href="hobbies.php">Hobbies</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <ul class="flex flex-col lg:flex-row gap-2">
+                    <li><a class="nav-link <?php echo ($page == 'home') ? 'active' : ''; ?>" href="index.php">Home</a></li>
+                    <li><a class="nav-link <?php echo ($page == 'overmij') ? 'active' : ''; ?>" href="overmij.php">About</a></li>
+                    <li><a class="nav-link <?php echo ($page == 'work') ? 'active' : ''; ?>" href="work.php">Work</a></li>
+                    <li><a class="nav-link <?php echo ($page == 'hobbies') ? 'active' : ''; ?>" href="hobbies.php">Hobbies</a></li>
+                    <li><a class="nav-link <?php echo ($page == 'contact') ? 'active' : ''; ?>" href="contact.php">Contact</a></li>
                 </ul>
             </div>
 
             <!-- Your theme dropdown -->
-            <div class="dropdown ms-lg-3">
-                <button onclick="toggleDropdown()" class="dropbtn">Verander de kleur</button>
-                <div id="myDropdown" class="dropdown-content">
+            <div class="dropdown ml-auto">
+                <button onclick="toggleDropdown()" class="dropbtn-minimal">Verander de kleur</button>
+                <div id="myDropdown" class="dropdown-content-minimal">
                     <a href="#" class="active" onclick="changeCSS('black.css', this)">Zwart</a>
                     <a href="#" onclick="changeCSS('white.css', this)">Wit</a>
                     <a href="#" onclick="changeCSS('red.css', this)">Rood</a>
@@ -47,7 +45,7 @@
     </nav>
 
 
-    <!-- only shows the banner when you're on index.php -->
+    <!-- only shows the banner when you're on home page -->
     <?php if (basename($_SERVER['PHP_SELF']) == 'index.php'): ?>
 
         <div class="ban bg">
@@ -57,9 +55,7 @@
                 </div>
             <?php endfor; ?>
             <div class="centered-text ban-text">Sven van Overloop
-                <?php if (basename($_SERVER['PHP_SELF']) == 'index.php'): ?>
-                    <div id="typewriter" class="ban-text-und"></div>
-                <?php endif; ?>
+                <div id="typewriter" class="ban-text-und"></div>
             </div>
         </div>
     <?php endif; ?>
