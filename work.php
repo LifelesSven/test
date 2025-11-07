@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link id="themeStylesheet" rel="stylesheet" href="css/themes/black.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
     <script src="js/script.js"></script>
     <title>Werk</title>
@@ -58,11 +57,12 @@
                 <div class="blok stwe">
                     <h3>School Projecten</h3>
 
-                    <div id="schoolProjectenCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
+                    <div id="schoolProjectenCarousel" class="relative">
+                        <!-- Carousel inner -->
+                        <div class="carousel-slides">
 
                             <!-- Project 1: Bij Wies&Co -->
-                            <div class="carousel-item active">
+                            <div class="carousel-slide active">
                                 <div class="project-card">
                                     <h4>Bij Wies&Co Webshop</h4>
                                     <p>
@@ -77,8 +77,8 @@
                                 </div>
                             </div>
 
-                            <!-- Future Project slot (just add more here as needed) -->
-                            <div class="carousel-item">
+                            <!-- Future Project slot -->
+                            <div class="carousel-slide">
                                 <div class="project-card">
                                     <h4>Huidig Project, Platenbaas</h4>
                                     <p>Voor dit project moet ik gaan werken aan een checkout incl. betaal functie.</p>
@@ -88,13 +88,13 @@
                         </div>
 
                         <!-- Controls -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#schoolProjectenCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Vorige</span>
+                        <button class="carousel-control-prev" type="button" onclick="prevSlide()">
+                            <span class="text-4xl" aria-hidden="true">‹</span>
+                            <span class="sr-only">Vorige</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#schoolProjectenCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Volgende</span>
+                        <button class="carousel-control-next" type="button" onclick="nextSlide()">
+                            <span class="text-4xl" aria-hidden="true">›</span>
+                            <span class="sr-only">Volgende</span>
                         </button>
                     </div>
                 </div>

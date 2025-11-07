@@ -1,4 +1,4 @@
-/* Updated styles using variables */
+/* Modern UX/UI Updated styles using variables */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -18,7 +18,8 @@
 
 ::-webkit-scrollbar-thumb {
   background: var(--scrollbar-thumb);
-  border-radius: 12px;
+  border-radius: 10px;
+  border: 2px solid var(--scrollbar-track);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -30,9 +31,11 @@ html {
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
   overflow-x: hidden;
   background-color: var(--main-background) !important;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
 }
 
 .wholenavban {
@@ -41,6 +44,8 @@ body {
 
 .nav {
   background-color: var(--nav-background);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 15px 0;
   height: 80px;
   display: flex;
@@ -49,15 +54,17 @@ body {
   position: fixed;
   z-index: 1000;
   width: 100vw;
-  border-bottom: 3px solid var(--nav-border);
+  border-bottom: 1px solid var(--nav-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   top: 0;
+  transition: all 0.3s ease;
 }
 
 .nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .nav ul li {
@@ -67,73 +74,183 @@ body {
 .nav ul li a {
   color: var(--nav-text);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   padding: 10px 20px;
-  transition: background-color 0.3s, color 0.3s;
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.nav ul li a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--link-hover-text);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav ul li a:hover::before {
+  width: 80%;
 }
 
 .nav ul li a:hover {
   background-color: var(--link-hover-background);
   color: var(--link-hover-text);
-  border-radius: 2px;
+  transform: translateY(-2px);
+}
+
+.nav ul li a.active {
+  background-color: var(--link-hover-background);
+  color: var(--link-hover-text);
+  font-weight: 700;
+}
+
+.nav ul li a.active::before {
+  width: 80%;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
-
 }
 
 .dropbtn {
-  background-color: var(--background);
+  background: linear-gradient(135deg, var(--background), var(--button-gradient-end));
   color: var(--text);
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
   border: 2px solid var(--button-border);
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
-  box-shadow: 0 0 10px var(--button-shadow);
+  box-shadow: 0 4px 15px var(--button-shadow);
   position: relative;
   float: right;
   width: 180px;
-  margin-left: auto;
+  letter-spacing: 0.5px;
 }
 
 .dropbtn:hover {
-  background-color: var(--dropdown-hover);
-  box-shadow: 0 0 15px var(--button-hover-shadow);
+  background: linear-gradient(135deg, var(--dropdown-hover), var(--button-hover-gradient-end));
+  box-shadow: 0 6px 20px var(--button-hover-shadow);
+  transform: translateY(-2px);
+}
+
+/* Minimal Dropdown Styles */
+.dropbtn-minimal {
+  background: transparent;
+  color: var(--text);
+  padding: 8px 12px;
+  font-size: 24px;
+  border: 1px solid var(--button-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropbtn-minimal:hover {
+  background: var(--link-hover-background);
+  transform: scale(1.1);
+  border-color: var(--link-hover-text);
+}
+
+.dropdown-content-minimal {
+  display: none;
+  position: absolute;
+  background-color: var(--background);
+  backdrop-filter: blur(10px);
+  min-width: 140px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  border: 1px solid var(--button-border);
+  border-radius: 8px;
+  top: calc(100% + 8px);
+  right: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  animation: slideDown 0.2s ease;
+}
+
+.dropdown:hover .dropdown-content-minimal {
+  display: block;
+}
+
+.dropdown-content-minimal a {
+  color: var(--text);
+  padding: 8px 14px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.15s ease;
+  font-size: 14px;
+  border-left: 2px solid transparent;
+}
+
+.dropdown-content-minimal a:hover {
+  background-color: var(--link-hover-background);
+  border-left-color: var(--link-hover-text);
+  padding-left: 18px;
+}
+
+.dropdown-content-minimal a.active {
+  background-color: var(--link-hover-background);
+  border-left-color: var(--link-hover-text);
+  font-weight: 600;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: var(--background);
+  backdrop-filter: blur(10px);
   min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
   z-index: 1;
-  border: 2px solid var(--button-border);
-  border-radius: 8px;
+  border: 1px solid var(--button-border);
+  border-radius: 12px;
   width: 180px;
-  top: calc(100%);
-  /* Push the dropdown down by the height of the button plus a small gap */
+  top: calc(100% + 5px);
   max-height: 300px;
   overflow-y: auto;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .dropdown-content a {
   color: var(--text);
-  padding: 10px 16px;
+  padding: 12px 16px;
   text-decoration: none;
   display: block;
-  transition: background-color 0.3s ease-in-out;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 8px;
+  margin: 4px;
+  font-weight: 500;
 }
 
 .dropdown-content a:hover {
   background-color: var(--dropdown-hover);
-  border-radius: 8px;
+  transform: translateX(5px);
+  padding-left: 20px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -146,10 +263,30 @@ h2 {
 
 .textlink {
   color: var(--link);
+  position: relative;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.textlink::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--link-hover);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .textlink:hover {
   color: var(--link-hover);
+}
+
+.textlink:hover::after {
+  transform: scaleX(1);
 }
 
 .ban {
@@ -159,19 +296,24 @@ h2 {
   background: var(--ban-background);
   background: var(--ban-gradient);
   overflow: hidden;
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
 .ban-text {
   color: var(--ban-text-color) !important;
-  text-shadow: white 2px 2px 5px;
-  font-size: 40px;
-  font-weight: bold;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 40px rgba(255, 255, 255, 0.5);
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  animation: fadeInUp 1s ease;
 }
 
 .ban-text-und {
-  font-size: 25px;
+  font-size: 1.8rem;
   color: var(--ban-text-color) !important;
+  font-weight: 500;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
 }
 
 .animated-background {
@@ -183,13 +325,7 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.ban-text {
-  font-size: 40px;
-  font-weight: bold;
-  color: var(--ban-text-color);
-  text-shadow: white 2px 2px 5px;
+  z-index: 10;
 }
 
 @media (max-width: 991px) {
@@ -225,60 +361,114 @@ h2 {
 
 
   .text-blok {
-    margin: 80px auto;
+    margin: 100px auto 80px;
     background-color: var(--text-block-background);
-    padding: 20px;
-    border: 3px solid var(--text-block-border);
-    border-radius: 5px;
-    width: 80%;
-    box-shadow: 0px 0px 10px 2px var(--box-shadow-color);
+    padding: 40px;
+    border: 1px solid var(--text-block-border);
+    border-radius: 20px;
+    width: 85%;
+    max-width: 1200px;
+    box-shadow: 0 10px 40px var(--box-shadow-color);
     color: var(--text);
-    font-size: large;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+  }
+
+  .text-blok:hover {
+    box-shadow: 0 15px 50px var(--box-shadow-color);
+    transform: translateY(-5px);
+  }
+
+  .text-blok h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--text), var(--link-hover-text));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-blok h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .text-blok p {
+    margin-bottom: 15px;
+    line-height: 1.8;
   }
 
   .container-blok {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
+    margin-top: 40px;
   }
 
   .blok {
     position: relative;
-    margin: 50px;
-    padding: 8px;
+    margin: 20px;
+    padding: 30px;
     width: 500px;
-    min-height: 300px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px 2px var(--box-shadow-color);
-    background-color: var(--background);
-    line-height: normal;
+    min-height: 320px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px var(--box-shadow-color);
+    background: linear-gradient(145deg, var(--background), var(--innerblock-background));
+    border: 1px solid var(--button-border);
+    line-height: 1.7;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+  }
+
+  .blok::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--button-gradient-start), var(--button-gradient-end));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .blok:hover::before {
+    transform: scaleX(1);
+  }
+
+  .blok:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 50px var(--box-shadow-color);
   }
 
   .blok .button {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     background: linear-gradient(135deg, var(--button-gradient-start), var(--button-gradient-end));
     color: var(--text);
     border: 2px solid var(--button-border);
-    padding: 10px 20px;
+    padding: 12px 28px;
     font-size: 16px;
-    font-weight: bold;
-    border-radius: 8px;
+    font-weight: 600;
+    border-radius: 12px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     text-align: center;
     display: inline-block;
     text-decoration: none;
-    box-shadow: 0 0 10px var(--button-shadow);
+    box-shadow: 0 4px 15px var(--button-shadow);
+    letter-spacing: 0.5px;
   }
 
   .blok .button:hover {
     background: linear-gradient(135deg, var(--button-hover-gradient-start), var(--button-hover-gradient-end));
-    box-shadow: 0 0 15px var(--button-hover-shadow);
-    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 8px 25px var(--button-hover-shadow);
+    transform: translateX(-50%) translateY(-3px);
   }
 
   /* overmij */
@@ -304,38 +494,48 @@ h2 {
   }
 
   .bar-container {
-    margin: 10px 0;
+    margin: 15px 0;
   }
 
   .bar-label {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 0.95rem;
   }
 
   .bar {
-    height: 20px;
-    background-color: #ddd;
-    border-radius: 4px;
+    height: 24px;
+    background: linear-gradient(90deg, #f0f0f0, #e0e0e0);
+    border-radius: 12px;
     overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
   }
 
   .bar-fill {
     height: 100%;
     text-align: right;
-    padding-right: 5px;
+    padding-right: 10px;
     color: white;
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   }
 
   .green {
-    background-color: #009602;
+    background: linear-gradient(90deg, #00c853, #00e676);
   }
 
   .red {
-    background-color: #db261d;
+    background: linear-gradient(90deg, #d32f2f, #f44336);
   }
 
   .orange {
-    background-color: #ff7518;
+    background: linear-gradient(90deg, #f57c00, #ff9800);
   }
 
 
@@ -352,28 +552,73 @@ h2 {
   .quote {
     font-style: italic;
     color: var(--quote-color);
-    margin: 10px 0;
+    margin: 30px 0;
+    padding: 20px 30px;
+    border-left: 4px solid var(--button-gradient-start);
+    background: linear-gradient(90deg, var(--innerblock-background), transparent);
+    border-radius: 8px;
+    font-size: 1.1rem;
   }
 
   .project-card {
-    background-color: var(--innerblock-background);
-    border-radius: 10px;
-    padding: 15px;
+    background: linear-gradient(145deg, var(--innerblock-background), var(--background));
+    border-radius: 16px;
+    padding: 25px;
     margin-top: 20px;
+    border: 1px solid var(--button-border);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   }
 
   .project-card h4 {
-    margin: 10px 0 5px;
+    margin: 10px 0 15px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--link-hover-text);
+  }
+
+  .project-card h5 {
+    margin-top: 15px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .project-card p {
+    line-height: 1.7;
+  }
+
+  .project-card ul {
+    padding-left: 20px;
+  }
+
+  .project-card ul li {
+    margin: 8px 0;
+    line-height: 1.6;
   }
 
   .btn-download {
     display: inline-block;
     margin-top: 30px;
-    padding: 10px 20px;
-    background-color: #4caf50;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #43a047, #66bb6a);
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(67, 160, 71, 0.3);
+    letter-spacing: 0.5px;
+  }
+
+  .btn-download:hover {
+    background: linear-gradient(135deg, #388e3c, #43a047);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(67, 160, 71, 0.4);
   }
 
   .carousel-control-next {
@@ -385,3 +630,122 @@ h2 {
     margin-left: -5vw;
     position: relative;
   }
+  /* Tailwind Carousel Styles */
+  .carousel-slides {
+    position: relative;
+    width: 100%;
+  }
+
+  .carousel-slide {
+    display: none;
+    width: 100%;
+  }
+
+  .carousel-slide.active {
+    display: block;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--background);
+    border: 2px solid var(--button-border);
+    color: var(--text);
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 10;
+    transition: all 0.3s ease;
+    margin: 0 !important;
+  }
+
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: var(--dropdown-hover);
+  }
+
+  .carousel-control-prev {
+    left: -50px;
+  }
+
+  .carousel-control-next {
+    right: -50px;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+
+/* Modern Responsive Design */@media (max-width: 768px) {
+  .text-blok {
+    width: 95%;
+    padding: 25px;
+    margin: 100px auto 50px;
+  }
+
+  .text-blok h1 {
+    font-size: 2rem;
+  }
+
+  .blok {
+    width: 90%;
+    margin: 15px;
+    padding: 20px;
+  }
+
+  .container-blok {
+    gap: 20px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .dropbtn {
+    width: 160px;
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}
+
+/* Loading animation */@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Smooth transitions for all interactive elements */a, button, .blok, .bar-fill {
+  will-change: transform;
+}
+
+/* Focus states for accessibility */:focus-visible {
+  outline: 2px solid var(--link-hover-text);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Improved text selection */::selection {
+  background-color: var(--link-hover-text);
+  color: var(--background);
+}

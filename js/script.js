@@ -1,5 +1,28 @@
 // typewriter in the banner
 document.addEventListener('DOMContentLoaded', function () {
+    // Add fade-in animation to elements
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // Observe elements with fade-in animation
+    document.querySelectorAll('.blok, .text-blok, .project-card').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
+
     var app = document.getElementById('typewriter');
 
     if (app) {
@@ -19,6 +42,16 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         console.error('Element with ID "typewriter" not found.');
     }
+
+    // Animate skill bars
+    const skillBars = document.querySelectorAll('.bar-fill');
+    skillBars.forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = '0%';
+        setTimeout(() => {
+            bar.style.width = width;
+        }, 100);
+    });
 });
 
 
@@ -40,7 +73,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function toggleDropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    const dropdown = document.getElementById("myDropdown");
+    if (dropdown) {
+        dropdown.classList.toggle("show");
+    }
+    // Support for minimal dropdown
+    const minimalDropdown = document.querySelector(".dropdown-content-minimal");
+    if (minimalDropdown) {
+        minimalDropdown.style.display = minimalDropdown.style.display === "block" ? "none" : "block";
+    }
 }
 
 function changeCSS(file, element) {
@@ -63,13 +104,18 @@ function changeCSS(file, element) {
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
+    if (!event.target.matches('.dropbtn') && !event.target.matches('.dropbtn-minimal')) {
         let dropdowns = document.getElementsByClassName("dropdown-content");
         for (let i = 0; i < dropdowns.length; i++) {
             let openDropdown = dropdowns[i];
             if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show');
             }
+        }
+        // Close minimal dropdown
+        let minimalDropdown = document.querySelector(".dropdown-content-minimal");
+        if (minimalDropdown && minimalDropdown.style.display === "block") {
+            minimalDropdown.style.display = "none";
         }
     }
 };
@@ -133,4 +179,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Display the result
     document.getElementById("tijd").textContent = totalYears;
+});
+
+// Mobile menu toggle for Tailwind navbar
+function toggleMobileMenu() {
+    const menu = document.getElementById('navbarContent');
+    menu.classList.toggle('hidden');
+}
+
+// Carousel functionality for Tailwind
+let currentSlideIndex = 0;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.carousel-slide');
+    if (slides.length === 0) return;
+    
+    if (index >= slides.length) {
+        currentSlideIndex = 0;
+    } else if (index < 0) {
+        currentSlideIndex = slides.length - 1;
+    } else {
+        currentSlideIndex = index;
+    }
+    
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === currentSlideIndex) {
+            slide.classList.add('active');
+        }
+    });
+}
+
+function nextSlide() {
+    showSlide(currentSlideIndex + 1);
+}
+
+function prevSlide() {
+    showSlide(currentSlideIndex - 1);
+}
+
+// Initialize carousel on page load
+document.addEventListener('DOMContentLoaded', function() {
+    showSlide(0);
 });
