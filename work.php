@@ -35,8 +35,7 @@
 
                     <h3>Werktijden</h3>
                     <ul>
-                        <li>Zaterdag: 15:00 - 20:00</li>
-                        <li>Zondag: 6:45 - 12:00</li>
+                        <li>Zaterdag: 17:30 - 20:00</li>
                     </ul>
                 </div>
 
@@ -53,58 +52,62 @@
                         <li>Mailing (Brevo)</li>
                     </ul>
                 </div>
+                <div class="block">
+                    <h2>School</h2>
 
-                <div class="blok stwe">
-                    <h3>School Projecten</h3>
-
-                    <div id="schoolProjectenCarousel" class="relative">
-                        <!-- Carousel inner -->
-                        <div class="carousel-slides">
-
-                            <!-- Project 1: Bij Wies&Co -->
-                            <div class="carousel-slide active">
-                                <div class="project-card">
-                                    <h4>Bij Wies&Co Webshop</h4>
-                                    <p>
-                                        Deze website heb ik samen met een team gemaakt. (Bijna) iedereen was halverwege het project afgehaakt, maar ik ging door! Het project is nu afgerond en de klant was er heel erg blij mee.
-                                    </p>
-                                    <h5>Verbeterpunten:</h5>
-                                    <ul>
-                                        <li>
-                                            Het project duurde vrij lang. Ik heb geleerd om duidelijker te zijn met de Userstories. Dit zorgt voor beter overzicht en samenwerking binnen het team.
-                                        </li>
-                                    </ul>
-                                </div>
+                    <div id="indicators-carousel" class="relative w-full" data-carousel="static">
+                        <!-- Carousel wrapper -->
+                        <div class="relative h-56 overflow-hidden rounded-base md:h-96">
+                            <!-- Item 1 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                                <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                             </div>
-
-                            <!-- Future Project slot -->
-                            <div class="carousel-slide">
-                                <div class="project-card">
-                                    <h4>Huidig Project, Platenbaas</h4>
-                                    <p>Voor dit project moet ik gaan werken aan een checkout incl. betaal functie.</p>
-                                </div>
+                            <!-- Item 2 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                             </div>
-
+                            <!-- Item 3 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            </div>
+                            <!-- Item 5 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            </div>
                         </div>
-
-                        <!-- Controls -->
-                        <button class="carousel-control-prev" type="button" onclick="prevSlide()">
-                            <span class="text-4xl" aria-hidden="true">‹</span>
-                            <span class="sr-only">Vorige</span>
+                        <!-- Slider indicators -->
+                        <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+                            <button type="button" class="w-3 h-3 rounded-base" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                            <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                            <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                            <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                        </div>
+                        <!-- Slider controls -->
+                        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7" />
+                                </svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
                         </button>
-                        <button class="carousel-control-next" type="button" onclick="nextSlide()">
-                            <span class="text-4xl" aria-hidden="true">›</span>
-                            <span class="sr-only">Volgende</span>
+                        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
+                                </svg>
+                                <span class="sr-only">Next</span>
+                            </span>
                         </button>
                     </div>
+
                 </div>
 
-            </div>
-
-            <a href="cv_mijnnaam.pdf" download class="btn-download">Download mijn CV</a>
-
-            <div class="quote">
-                "Je komt naar werk om te werken, en niet om niet te werken."
             </div>
         </div>
     </div>

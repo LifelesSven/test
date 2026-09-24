@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .pauseFor(2500)
             .deleteAll()
             .pauseFor(400)
-            .typeString('Musician')
+            .typeString('Muzikant')
             .pauseFor(2500)
             .deleteAll()
             .pauseFor(400)

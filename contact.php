@@ -74,7 +74,7 @@
                         </div>
                         <div>
                             <h3>E-mail</h3>
-                            <p><a href="mailto:sven@example.com" class="contact-link">sven@example.com</a></p>
+                            <p><a href="mailto:svengrotekreek@gmail.com" class="contact-link">Svengrotekreek@gmail.com</a></p>
                         </div>
                     </div>
 
@@ -94,7 +94,7 @@
                         </div>
                         <div>
                             <h3>LinkedIn</h3>
-                            <p><a href="#" class="contact-link" target="_blank">linkedin.com/in/sven</a></p>
+                            <p><a href="https://www.linkedin.com/in/sven-van-overloop-589a8a27a/" class="contact-link" target="_blank">Sven van Overloop</a></p>
                         </div>
                     </div>
 
@@ -104,18 +104,18 @@
                         </div>
                         <div>
                             <h3>GitHub</h3>
-                            <p><a href="https://github.com/LiflesSven" class="contact-link" target="_blank">github.com/LiflesSven</a></p>
+                            <p><a href="https://github.com/LifelesSven" class="contact-link" target="_blank">github.com/LiflesSven</a></p>
                         </div>
                     </div>
 
                     <div class="social-links">
-                        <a href="#" class="social-icon linkedin" title="LinkedIn" target="_blank">
+                        <a href="https://www.linkedin.com/in/sven-van-overloop-589a8a27a/" class="social-icon linkedin" title="LinkedIn" target="_blank">
                             <i class="fa fa-linkedin"></i>
                         </a>
                         <a href="https://github.com/LiflesSven" class="social-icon github" title="GitHub" target="_blank">
                             <i class="fa fa-github"></i>
                         </a>
-                        <a href="mailto:sven@example.com" class="social-icon email" title="Email">
+                        <a href="mailto:svengrotekreek@gmail.com" class="social-icon email" title="Email">
                             <i class="fa fa-envelope"></i>
                         </a>
                     </div>
