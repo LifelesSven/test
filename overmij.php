@@ -31,14 +31,14 @@
                 <div class="blok">
                     <h2>Wie ben ik?</h2>
                     <p>
-                        Mijn naam is Sven, ik ben <span id="age"></span> jaar oud en woon in Hulst, Nederland. Ik studeer Software Development aan Scalda in Terneuzen. Bij het ontwerpen van mijn websites focus ik op eenvoudige maar aantrekkelijke designs. Ik experimenteer graag met verschillende kleuren, zoals je kunt zien op deze pagina. Klik gerust op de knop 'Verander de kleur' in de navigatiebalk!
+                        Mijn naam is Sven, ik ben <span id="age"></span> jaar oud en woon in Hulst, Nederland. Ik studeer ICT bij hz Middelburg. Bij het ontwerpen van mijn websites focus ik op eenvoudige maar aantrekkelijke designs. Ik experimenteer graag met verschillende kleuren, zoals je kunt zien op deze pagina. Klik gerust op de knop 'Verander de kleur' in de navigatiebalk!
                     </p>
                 </div>
                 <div class="blok">
                     <h2>Hobbies</h2>
                     <p>
                         Als ik niet aan het <a href="work.php" class="textlink">werken</a> ben speel ik graag games en muziek. Als je meer wilt weten over mijn hobby's en interesses, klik dan op de knop hieronder.
-                        <a href="#" class="button">Klik hier</a>
+                        <a href="hobbies.php" class="button">Klik hier</a>
                     </p>
                 </div>
                 <div class="blok stwe">

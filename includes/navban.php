@@ -15,6 +15,7 @@
                     <li><a class="nav-link <?php echo ($page == 'home') ? 'active' : ''; ?>" href="index.php">Home</a></li>
                     <li><a class="nav-link <?php echo ($page == 'overmij') ? 'active' : ''; ?>" href="overmij.php">Over mij</a></li>
                     <li><a class="nav-link <?php echo ($page == 'work') ? 'active' : ''; ?>" href="work.php">Werk</a></li>
+                    <li><a class="nav-link <?php echo ($page == 'school') ? 'active' : ''; ?>" href="school.php">School</a></li>
                     <li><a class="nav-link <?php echo ($page == 'hobbies') ? 'active' : ''; ?>" href="hobbies.php">Hobbies</a></li>
                     <li><a class="nav-link <?php echo ($page == 'contact') ? 'active' : ''; ?>" href="contact.php">Contact</a></li>
                 </ul>
