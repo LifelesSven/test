@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(el);
     });
 
-    var app = document.getElementById('typewriter');
+    const app = document.getElementById('typewriter');
 
-    if (app) {
-        var typewriter = new Typewriter(app, {
+    if (app && typeof Typewriter === 'function') {
+        const typewriter = new Typewriter(app, {
             loop: true
         });
 
@@ -39,8 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
             .deleteAll()
             .pauseFor(400)
             .start();
-    } else {
-        console.error('Element with ID "typewriter" not found.');
     }
 
     // Animate skill bars
@@ -122,6 +120,9 @@ window.onclick = function(event) {
 
 // JavaScript to calculate and display age
 document.addEventListener("DOMContentLoaded", function () {
+    const ageElement = document.getElementById("age");
+    if (!ageElement) return;
+
     const birthDate = new Date("2005-01-22");
     const today = new Date();
     const age = today.getFullYear() - birthDate.getFullYear();
@@ -132,10 +133,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const adjustedAge = monthDiff < 0 || (monthDiff === 0 && dayDiff < 0) ? age - 1 : age;
 
     // Set the age in the span with id="age"
-    document.getElementById("age").textContent = adjustedAge;
+    ageElement.textContent = adjustedAge;
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+    const experienceElement = document.getElementById("tijd");
+    if (!experienceElement) return;
+
     const start = new Date("2019-06-03");
     const today = new Date();
 
@@ -178,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Display the result
-    document.getElementById("tijd").textContent = totalYears;
+    experienceElement.textContent = totalYears;
 });
 
 // Mobile menu toggle for Tailwind navbar
