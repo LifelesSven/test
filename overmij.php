@@ -12,7 +12,7 @@
     <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
 
     <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js?v=3"></script>
 
     <title>Over mij</title>
 </head>

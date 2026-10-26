@@ -1,24 +1,34 @@
+<?php
+$siteBasePath = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');
+if (basename($siteBasePath) === 'blog') {
+    $siteBasePath = dirname($siteBasePath);
+}
+if ($siteBasePath === DIRECTORY_SEPARATOR) {
+    $siteBasePath = '';
+}
+$siteBasePath = htmlspecialchars($siteBasePath, ENT_QUOTES, 'UTF-8');
+?>
 <div class="wholenavban">
     <!-- Navbar -->
-    <nav class="nav w-full relative z-50" style="background-color: var(--nav-background); border-bottom: 1px solid var(--nav-border); color: var(--nav-text);">
-        <div class="w-full max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+    <nav class="nav" style="background-color: var(--nav-background); border-bottom: 1px solid var(--nav-border); color: var(--nav-text);">
+        <div class="nav-inner">
 
             <!-- Hamburger button (mobile) -->
-            <button class="lg:hidden text-2xl" type="button" onclick="toggleMobileMenu()" aria-label="Toggle navigation"
+            <button class="nav-mobile-toggle" type="button" onclick="toggleMobileMenu()" aria-label="Toggle navigation"
                 style="color: var(--nav-text);">
                 ☰
             </button>
 
             <!-- Desktop navigation links -->
-            <div class="hidden lg:flex" id="navbarContent">
-                <ul class="flex flex-row gap-4">
-                    <li><a class="nav-link <?php echo ($page == 'home') ? 'active' : ''; ?>" href="index.php">Home</a></li>
-                    <li><a class="nav-link <?php echo ($page == 'overmij') ? 'active' : ''; ?>" href="overmij.php">Over mij</a></li>
-                    <li><a class="nav-link <?php echo ($page == 'work') ? 'active' : ''; ?>" href="work.php">Werk</a></li>
-                    <li><a class="nav-link <?php echo ($page == 'school') ? 'active' : ''; ?>" href="school.php">School</a></li>
-                    <li><a class="nav-link <?php echo ($page == 'hobbies') ? 'active' : ''; ?>" href="hobbies.php">Hobbies</a></li>
-                    <li><a class="nav-link <?php echo ($page == 'blog') ? 'active' : ''; ?>" href="blog.php">Blog</a></li>
-                    <li><a class="nav-link <?php echo ($page == 'contact') ? 'active' : ''; ?>" href="contact.php">Contact</a></li>
+            <div id="navbarContent">
+                <ul>
+                    <li><a class="nav-link <?php echo ($page == 'home') ? 'active' : ''; ?>" href="<?php echo $siteBasePath; ?>/index.php">Home</a></li>
+                    <li><a class="nav-link <?php echo ($page == 'overmij') ? 'active' : ''; ?>" href="<?php echo $siteBasePath; ?>/overmij.php">Over mij</a></li>
+                    <li><a class="nav-link <?php echo ($page == 'work') ? 'active' : ''; ?>" href="<?php echo $siteBasePath; ?>/work.php">Werk</a></li>
+                    <li><a class="nav-link <?php echo ($page == 'school') ? 'active' : ''; ?>" href="<?php echo $siteBasePath; ?>/school.php">School</a></li>
+                    <li><a class="nav-link <?php echo ($page == 'hobbies') ? 'active' : ''; ?>" href="<?php echo $siteBasePath; ?>/hobbies.php">Hobbies</a></li>
+                    <li><a class="nav-link <?php echo ($page == 'blog') ? 'active' : ''; ?>" href="<?php echo $siteBasePath; ?>/blog.php">Blog</a></li>
+                    <li><a class="nav-link <?php echo ($page == 'contact') ? 'active' : ''; ?>" href="<?php echo $siteBasePath; ?>/contact.php">Contact</a></li>
                 </ul>
             </div>
 
@@ -47,14 +57,16 @@
 
         <!-- Mobile dropdown menu -->
         <div id="mobileMenu"
-            class="hidden lg:hidden absolute top-full left-0 w-full rounded-b-lg shadow-lg animate-slide-down"
+            class="nav-mobile-menu hidden"
             style="background-color: var(--nav-background); color: var(--nav-text); border-top: 1px solid var(--nav-border); box-shadow: 0 8px 20px var(--box-shadow-color);">
-            <ul class="flex flex-col items-start gap-3 p-4">
-                <li><a class="nav-link w-full block <?php echo ($page == 'home') ? 'active' : ''; ?>" href="index.php">Home</a></li>
-                <li><a class="nav-link w-full block <?php echo ($page == 'overmij') ? 'active' : ''; ?>" href="overmij.php">About</a></li>
-                <li><a class="nav-link w-full block <?php echo ($page == 'work') ? 'active' : ''; ?>" href="work.php">Work</a></li>
-                <li><a class="nav-link w-full block <?php echo ($page == 'hobbies') ? 'active' : ''; ?>" href="hobbies.php">Hobbies</a></li>
-                <li><a class="nav-link w-full block <?php echo ($page == 'contact') ? 'active' : ''; ?>" href="contact.php">Contact</a></li>
+            <ul>
+                <li><a class="nav-link w-full block <?php echo ($page == 'home') ? 'active' : ''; ?>" href="<?php echo $siteBasePath; ?>/index.php">Home</a></li>
+                <li><a class="nav-link w-full block <?php echo ($page == 'overmij') ? 'active' : ''; ?>" href="<?php echo $siteBasePath; ?>/overmij.php">Over mij</a></li>
+                <li><a class="nav-link w-full block <?php echo ($page == 'work') ? 'active' : ''; ?>" href="<?php echo $siteBasePath; ?>/work.php">Work</a></li>
+                <li><a class="nav-link w-full block <?php echo ($page == 'school') ? 'active' : ''; ?>" href="<?php echo $siteBasePath; ?>/school.php">School</a></li>
+                <li><a class="nav-link w-full block <?php echo ($page == 'hobbies') ? 'active' : ''; ?>" href="<?php echo $siteBasePath; ?>/hobbies.php">Hobbies</a></li>
+                <li><a class="nav-link w-full block <?php echo ($page == 'blog') ? 'active' : ''; ?>" href="<?php echo $siteBasePath; ?>/blog.php">Blog</a></li>
+                <li><a class="nav-link w-full block <?php echo ($page == 'contact') ? 'active' : ''; ?>" href="<?php echo $siteBasePath; ?>/contact.php">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -102,7 +114,7 @@
         from { opacity: 0; transform: translateY(-10px); }
         to { opacity: 1; transform: translateY(0); }
     }
-    .animate-slide-down {
+    .nav-mobile-menu:not(.hidden) {
         animation: slideDown 0.25s ease-out;
     }
 

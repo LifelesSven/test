@@ -5,17 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link id="themeStylesheet" rel="stylesheet" href="../css/themes/black.css" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css?v=2" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/script.js?v=3"></script>
     <title>Waarom ICT</title>
 </head>
 
-<body>
-<a href="../blog.php"> <- Terug</a>
+<body class="why-ict-page">
+    <?php
+    $page = 'blog';
+    include '../includes/navban.php';
+    ?>
+    <a href="../blog.php"> &larr; Terug</a>
     <div class="content">
         <div class="text-blok">
             <h2>Waarom nou ICT</h2>

@@ -54,19 +54,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    let savedTheme = localStorage.getItem("selectedTheme");
+    const savedTheme = localStorage.getItem("selectedTheme");
 
     if (savedTheme) {
-        // Apply the saved theme
-        document.getElementById("themeStylesheet").href = savedTheme;
+        const savedThemeFile = savedTheme.split(/[\\/]/).pop();
+        const themeLink = [...document.querySelectorAll(".dropdown-content-minimal a")]
+            .find(link => link.getAttribute("onclick").includes(`'${savedThemeFile}'`));
 
-        // Set the active class on the corresponding link
-        let links = document.querySelectorAll(".dropdown-content a");
-        links.forEach(link => {
-            if (link.getAttribute("onclick").includes(savedTheme.split('/').pop())) {
-                link.classList.add("active");
-            }
-        });
+        if (themeLink) {
+            changeCSS(savedThemeFile, themeLink);
+        }
     }
 });
 
@@ -83,21 +80,20 @@ function toggleDropdown() {
 }
 
 function changeCSS(file, element) {
-    // Construct the full relative path
-    const fullPath = `css/themes/${file}`;
-    
-    // Update the theme stylesheet
-    document.getElementById("themeStylesheet").href = fullPath;
+    const themeStylesheet = document.getElementById("themeStylesheet");
+    const scriptUrl = document.querySelector('script[src*="script.js"]').src;
+    const themeDirectory = new URL("../css/themes/", scriptUrl);
+    const themeUrl = new URL(file, themeDirectory);
 
-    // Save the full path to localStorage
-    localStorage.setItem("selectedTheme", fullPath);
+    themeStylesheet.href = themeUrl.href;
+    localStorage.setItem("selectedTheme", file);
 
-    // Remove 'active' class from all links
-    let links = document.querySelectorAll(".dropdown-content a");
+    const links = document.querySelectorAll(".dropdown-content-minimal a");
     links.forEach(link => link.classList.remove("active"));
 
-    // Add 'active' class to the clicked link
-    element.classList.add("active");
+    if (element) {
+        element.classList.add("active");
+    }
 }
 
 // Close the dropdown if the user clicks outside of it
