@@ -143,6 +143,18 @@ body {
   overflow: hidden;
 }
 
+.nav .nav-link {
+  color: var(--nav-text);
+  transition: background 0.2s ease, color 0.2s ease;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+#mobileMenu .nav-link {
+  width: 100%;
+}
+
 .nav ul li a::before {
   content: '';
   position: absolute;

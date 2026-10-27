@@ -1,5 +1,17 @@
 // typewriter in the banner
 document.addEventListener('DOMContentLoaded', function () {
+    const banner = document.querySelector('.ban');
+    if (banner) {
+        const dots = document.createDocumentFragment();
+        for (let i = 1; i <= 75; i++) {
+            const wrapper = document.createElement('div');
+            wrapper.className = `dotWrapper dotWrapper-${i}`;
+            wrapper.innerHTML = `<div class="dot dot-${i}"></div>`;
+            dots.appendChild(wrapper);
+        }
+        banner.prepend(dots);
+    }
+
     // Add fade-in animation to elements
     const observerOptions = {
         threshold: 0.1,
@@ -183,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Mobile menu toggle for Tailwind navbar
 function toggleMobileMenu() {
-    const menu = document.getElementById('navbarContent');
+    const menu = document.getElementById('mobileMenu');
     menu.classList.toggle('hidden');
 }
 
