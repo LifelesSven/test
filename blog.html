@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="themeStylesheet" rel="stylesheet" href="css/themes/black.css" />
+    <link rel="stylesheet" href="css/style.css?v=4" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+    <script src="js/script.js?v=4"></script>
+    <title>Blog</title>
+</head>
+
+<body class="blog-page">
+        <div class="wholenavban">
+        <nav class="nav" style="background-color: var(--nav-background); border-bottom: 1px solid var(--nav-border); color: var(--nav-text);">
+            <div class="nav-inner">
+                <button class="nav-mobile-toggle" type="button" onclick="toggleMobileMenu()" aria-label="Toggle navigation" style="color: var(--nav-text);">&#9776;</button>
+                <div id="navbarContent">
+                    <ul>
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="overmij.html">Over mij</a></li>
+                    <li><a class="nav-link" href="work.html">Werk</a></li>
+                    <li><a class="nav-link" href="school.html">School</a></li>
+                    <li><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                    <li><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown ml-auto">
+                    <button onclick="toggleDropdown()" class="dropbtn-minimal" style="color: var(--nav-text);">Verander de kleur</button>
+                    <div id="myDropdown" class="dropdown-content-minimal" style="background-color: var(--background); border: 1px solid var(--button-border);">
+                    <a href="#" onclick="changeCSS('black.css', this); return false;">Zwart</a>
+                    <a href="#" onclick="changeCSS('white.css', this); return false;">Wit</a>
+                    <a href="#" onclick="changeCSS('red.css', this); return false;">Rood</a>
+                    <a href="#" onclick="changeCSS('blue.css', this); return false;">Blauw</a>
+                    <a href="#" onclick="changeCSS('green.css', this); return false;">Groen</a>
+                    <a href="#" onclick="changeCSS('cyan.css', this); return false;">Cyaan</a>
+                    <a href="#" onclick="changeCSS('purple.css', this); return false;">Paars</a>
+                    <a href="#" onclick="changeCSS('pink.css', this); return false;">Roze</a>
+                    <a href="#" onclick="changeCSS('yellow.css', this); return false;">Geel</a>
+                    <a href="#" onclick="changeCSS('lightgreen.css', this); return false;">Licht Groen</a>
+                    <a href="#" onclick="changeCSS('gingerorange.css', this); return false;">Ginger Oranje</a>
+                    <a href="#" onclick="changeCSS('Vulcanic.css', this); return false;">Vulcanic</a>
+                    <a href="#" onclick="changeCSS('rainbow.css', this); return false;">Regenboog</a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobileMenu" class="nav-mobile-menu hidden" style="background-color: var(--nav-background); color: var(--nav-text); border-top: 1px solid var(--nav-border); box-shadow: 0 8px 20px var(--box-shadow-color);">
+                <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="overmij.html">Over mij</a></li>
+                <li><a class="nav-link" href="work.html">Werk</a></li>
+                <li><a class="nav-link" href="school.html">School</a></li>
+                <li><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                <li><a class="nav-link active" href="blog.html">Blog</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main class="content">
+        <div class="text-blok">
+            <h1>Blog</h1>
+
+            <section class="blog-grid" aria-label="Blogartikelen">
+                <article class="blok blog-card">
+                    <img src="https://placehold.co/300x150" alt="Blog Image">
+                    <h2>Waarom ICT</h2>
+                    <p>Lees hier meer over de reden dat ik de opleiding ICT heb gekozen</p>
+                    <a href="blog/why_ict.html" class="button">Klik hier</a>
+                </article>
+
+                <article class="blok blog-card">
+                    <img src="https://placehold.co/300x150" alt="Blog Image">
+                    <h2>Swot Analyse</h2>
+                    <p>Wilt u zien hoe ik van mijn zwakke punten toch een voordeel kan maken. Lees dan deze blog!</p>
+                    <a href="blog/swot.html" class="button">Klik hier</a>
+                </article>
+
+                <article class="blok blog-card">
+                    <img src="https://placehold.co/300x150" alt="Blog Image">
+                    <h2>Blog Title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, tempora deleniti error ea ducimus
+                        laborum quia placeat unde in animi magni corporis a, debitis est quisquam dignissimos possimus alias
+                        cumque.</p>
+                    <a href="#" class="button">Klik hier</a>
+                </article>
+
+                <article class="blok blog-card">
+                    <img src="https://placehold.co/300x150" alt="Blog Image">
+                    <h2>Blog Title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ducimus sint non voluptatem itaque
+                        dicta sit. Laboriosam quae ratione odit enim recusandae. Adipisci inventore veritatis sit libero facilis
+                        esse quam.</p>
+                    <a href="#" class="button">Klik hier</a>
+                </article>
+
+                <article class="blok blog-card">
+                    <img src="https://placehold.co/300x150" alt="Blog Image">
+                    <h2>Blog Title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ducimus sint non voluptatem itaque
+                        dicta sit. Laboriosam quae ratione odit enim recusandae. Adipisci inventore veritatis sit libero facilis
+                        esse quam.</p>
+                    <a href="#" class="button">Klik hier</a>
+                </article>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

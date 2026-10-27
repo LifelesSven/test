@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="themeStylesheet" rel="stylesheet" href="css/themes/black.css" />
+    <link rel="stylesheet" href="css/style.css?v=4" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+    <script src="js/script.js?v=4"></script>
+    <title>Contact</title>
+</head>
+
+<body class="contact">
+        <div class="wholenavban">
+        <nav class="nav" style="background-color: var(--nav-background); border-bottom: 1px solid var(--nav-border); color: var(--nav-text);">
+            <div class="nav-inner">
+                <button class="nav-mobile-toggle" type="button" onclick="toggleMobileMenu()" aria-label="Toggle navigation" style="color: var(--nav-text);">&#9776;</button>
+                <div id="navbarContent">
+                    <ul>
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="overmij.html">Over mij</a></li>
+                    <li><a class="nav-link" href="work.html">Werk</a></li>
+                    <li><a class="nav-link" href="school.html">School</a></li>
+                    <li><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                    <li><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li><a class="nav-link active" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown ml-auto">
+                    <button onclick="toggleDropdown()" class="dropbtn-minimal" style="color: var(--nav-text);">Verander de kleur</button>
+                    <div id="myDropdown" class="dropdown-content-minimal" style="background-color: var(--background); border: 1px solid var(--button-border);">
+                    <a href="#" onclick="changeCSS('black.css', this); return false;">Zwart</a>
+                    <a href="#" onclick="changeCSS('white.css', this); return false;">Wit</a>
+                    <a href="#" onclick="changeCSS('red.css', this); return false;">Rood</a>
+                    <a href="#" onclick="changeCSS('blue.css', this); return false;">Blauw</a>
+                    <a href="#" onclick="changeCSS('green.css', this); return false;">Groen</a>
+                    <a href="#" onclick="changeCSS('cyan.css', this); return false;">Cyaan</a>
+                    <a href="#" onclick="changeCSS('purple.css', this); return false;">Paars</a>
+                    <a href="#" onclick="changeCSS('pink.css', this); return false;">Roze</a>
+                    <a href="#" onclick="changeCSS('yellow.css', this); return false;">Geel</a>
+                    <a href="#" onclick="changeCSS('lightgreen.css', this); return false;">Licht Groen</a>
+                    <a href="#" onclick="changeCSS('gingerorange.css', this); return false;">Ginger Oranje</a>
+                    <a href="#" onclick="changeCSS('Vulcanic.css', this); return false;">Vulcanic</a>
+                    <a href="#" onclick="changeCSS('rainbow.css', this); return false;">Regenboog</a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobileMenu" class="nav-mobile-menu hidden" style="background-color: var(--nav-background); color: var(--nav-text); border-top: 1px solid var(--nav-border); box-shadow: 0 8px 20px var(--box-shadow-color);">
+                <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="overmij.html">Over mij</a></li>
+                <li><a class="nav-link" href="work.html">Werk</a></li>
+                <li><a class="nav-link" href="school.html">School</a></li>
+                <li><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                <li><a class="nav-link" href="blog.html">Blog</a></li>
+                <li><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="text-blok">
+            <h1>Contact</h1>
+            <p>Heb je vragen, suggesties of wil je samenwerken? Neem gerust contact met mij op!</p>
+
+            <div class="container-blok">
+                <!-- Contact Form -->
+                <div class="blok contact-form-blok">
+                    <h2>✉️ Stuur een bericht</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fa fa-user"></i> Naam *
+                            </label>
+                            <input type="text" id="name" name="name" required placeholder="Je volledige naam" autocomplete="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fa fa-envelope"></i> E-mail *
+                            </label>
+                            <input type="email" id="email" name="email" required placeholder="je@email.nl" autocomplete="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fa fa-tag"></i> Onderwerp *
+                            </label>
+                            <input type="text" id="subject" name="subject" required placeholder="Waar gaat je bericht over?">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fa fa-comment"></i> Bericht *
+                            </label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Vertel me wat je op je hart hebt..."></textarea>
+                            <span class="char-count" id="charCount">0 / 500 karakters</span>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <i class="fa fa-paper-plane"></i> Verstuur bericht
+                        </button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="blok contact-info-blok">
+                    <h2>📞 Contact Informatie</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>E-mail</h3>
+                            <p><a href="mailto:svengrotekreek@gmail.com" class="contact-link">Svengrotekreek@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div>
+                            <h3>Locatie</h3>
+                            <p>Hulst, Nederland</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa fa-linkedin"></i>
+                        </div>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://www.linkedin.com/in/sven-van-overloop-589a8a27a/" class="contact-link" target="_blank">Sven van Overloop</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa fa-github"></i>
+                        </div>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p><a href="https://github.com/LifelesSven" class="contact-link" target="_blank">github.com/LiflesSven</a></p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/sven-van-overloop-589a8a27a/" class="social-icon linkedin" title="LinkedIn" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/LiflesSven" class="social-icon github" title="GitHub" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="mailto:svengrotekreek@gmail.com" class="social-icon email" title="Email">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote">
+                "Goede communicatie is de sleutel tot succes."
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Character counter for message
+        const messageField = document.getElementById('message');
+        const charCount = document.getElementById('charCount');
+        
+        messageField.addEventListener('input', function() {
+            const length = this.value.length;
+            charCount.textContent = length + ' / 500 karakters';
+            
+            if (length > 450) {
+                charCount.style.color = 'var(--link-hover-text)';
+            } else {
+                charCount.style.color = 'var(--text)';
+            }
+        });
+
+        // Contact form submission with validation
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formMessage = document.getElementById('formMessage');
+            const submitBtn = this.querySelector('.btn-submit');
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            // Disable submit button during submission
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Verzenden...';
+            
+            // Simulate form submission (replace with actual backend call)
+            setTimeout(() => {
+                formMessage.innerHTML = `
+                    <div class="success-message">
+                        <i class="fa fa-check-circle"></i>
+                        <strong>Succesvol verzonden!</strong><br>
+                        Bedankt voor je bericht, ${name}! Ik neem zo snel mogelijk contact met je op via ${email}.
+                    </div>
+                `;
+                formMessage.style.display = 'block';
+                
+                // Reset form
+                this.reset();
+                charCount.textContent = '0 / 500 karakters';
+                
+                // Re-enable submit button
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fa fa-paper-plane"></i> Verstuur bericht';
+                
+                // Hide message after 7 seconds
+                setTimeout(() => {
+                    formMessage.style.display = 'none';
+                }, 7000);
+            }, 1500);
+        });
+
+        // Add floating label effect
+        document.querySelectorAll('.form-group input, .form-group textarea').forEach(field => {
+            field.addEventListener('focus', function() {
+                this.parentElement.classList.add('focused');
+            });
+            
+            field.addEventListener('blur', function() {
+                if (!this.value) {
+                    this.parentElement.classList.remove('focused');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

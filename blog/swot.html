@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="themeStylesheet" rel="stylesheet" href="../css/themes/black.css" />
+    <link rel="stylesheet" href="../css/style.css?v=4" />
+    <script src="../js/script.js?v=4"></script>
+    <title>SWOT-analyse</title>
+</head>
+
+<body class="swot-page">
+        <div class="wholenavban">
+        <nav class="nav" style="background-color: var(--nav-background); border-bottom: 1px solid var(--nav-border); color: var(--nav-text);">
+            <div class="nav-inner">
+                <button class="nav-mobile-toggle" type="button" onclick="toggleMobileMenu()" aria-label="Toggle navigation" style="color: var(--nav-text);">&#9776;</button>
+                <div id="navbarContent">
+                    <ul>
+                    <li><a class="nav-link" href="../index.html">Home</a></li>
+                    <li><a class="nav-link" href="../overmij.html">Over mij</a></li>
+                    <li><a class="nav-link" href="../work.html">Werk</a></li>
+                    <li><a class="nav-link" href="../school.html">School</a></li>
+                    <li><a class="nav-link" href="../hobbies.html">Hobbies</a></li>
+                    <li><a class="nav-link active" href="../blog.html">Blog</a></li>
+                    <li><a class="nav-link" href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown ml-auto">
+                    <button onclick="toggleDropdown()" class="dropbtn-minimal" style="color: var(--nav-text);">Verander de kleur</button>
+                    <div id="myDropdown" class="dropdown-content-minimal" style="background-color: var(--background); border: 1px solid var(--button-border);">
+                    <a href="#" onclick="changeCSS('black.css', this); return false;">Zwart</a>
+                    <a href="#" onclick="changeCSS('white.css', this); return false;">Wit</a>
+                    <a href="#" onclick="changeCSS('red.css', this); return false;">Rood</a>
+                    <a href="#" onclick="changeCSS('blue.css', this); return false;">Blauw</a>
+                    <a href="#" onclick="changeCSS('green.css', this); return false;">Groen</a>
+                    <a href="#" onclick="changeCSS('cyan.css', this); return false;">Cyaan</a>
+                    <a href="#" onclick="changeCSS('purple.css', this); return false;">Paars</a>
+                    <a href="#" onclick="changeCSS('pink.css', this); return false;">Roze</a>
+                    <a href="#" onclick="changeCSS('yellow.css', this); return false;">Geel</a>
+                    <a href="#" onclick="changeCSS('lightgreen.css', this); return false;">Licht Groen</a>
+                    <a href="#" onclick="changeCSS('gingerorange.css', this); return false;">Ginger Oranje</a>
+                    <a href="#" onclick="changeCSS('Vulcanic.css', this); return false;">Vulcanic</a>
+                    <a href="#" onclick="changeCSS('rainbow.css', this); return false;">Regenboog</a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobileMenu" class="nav-mobile-menu hidden" style="background-color: var(--nav-background); color: var(--nav-text); border-top: 1px solid var(--nav-border); box-shadow: 0 8px 20px var(--box-shadow-color);">
+                <ul>
+                <li><a class="nav-link" href="../index.html">Home</a></li>
+                <li><a class="nav-link" href="../overmij.html">Over mij</a></li>
+                <li><a class="nav-link" href="../work.html">Werk</a></li>
+                <li><a class="nav-link" href="../school.html">School</a></li>
+                <li><a class="nav-link" href="../hobbies.html">Hobbies</a></li>
+                <li><a class="nav-link active" href="../blog.html">Blog</a></li>
+                <li><a class="nav-link" href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <main class="swot-content">
+        <a class="swot-back" href="../blog.html">&larr; Terug naar de blog</a>
+        <header class="swot-intro">
+            <h1>Mijn SWOT-analyse</h1>
+            <p>Een overzicht van mijn sterke punten, aandachtspunten, kansen en mogelijke uitdagingen.</p>
+        </header>
+
+        <section class="swot-grid" aria-label="Mijn SWOT-analyse">
+            <article class="swot-card swot-strengths">
+                <h2>Sterktes</h2>
+                <ul>
+                    <li>Ik ga gestructureerd te werk.</li>
+                    <li>Ik kan goed werken in een team en zelfstandig.</li>
+                    <li>Ik kan me goed concentreren.</li>
+                </ul>
+            </article>
+
+            <article class="swot-card swot-weaknesses">
+                <h2>Zwaktes</h2>
+                <ul>
+                    <li>In een groep met mensen die ik niet of amper ken, ben ik vaak stil.</li>
+                    <li>Ik werk soms te lang aan één taak zonder dat zelf door te hebben.</li>
+                </ul>
+            </article>
+
+            <article class="swot-card swot-opportunities">
+                <h2>Kansen</h2>
+                <ul>
+                    <li>Mijn gestructureerde manier van werken kan helpen om projecten goed te plannen en overzicht te houden.</li>
+                    <li>Doordat ik zowel in een team als zelfstandig kan werken, kan ik me aanpassen aan verschillende opdrachten en samenwerken met anderen.</li>
+                    <li>Mijn concentratievermogen geeft me de kans om me goed te verdiepen in nieuwe onderwerpen en vaardigheden.</li>
+                </ul>
+            </article>
+
+            <article class="swot-card swot-threats">
+                <h2>Bedreigingen</h2>
+                <ul>
+                    <li>Doordat ik in een onbekende groep stil kan zijn, bestaat het risico dat ik mijn ideeën minder snel deel of om hulp vraag.</li>
+                    <li>Als ik te lang aan één taak werk, kan dat ervoor zorgen dat andere taken of deadlines in de knel komen.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="swot-summary" aria-labelledby="swot-summary-title">
+            <h2 id="swot-summary-title">Kort samengevat</h2>
+            <p>
+                Mijn gestructureerde manier van werken, flexibiliteit en concentratie helpen mij om opdrachten goed aan te pakken en nieuwe dingen te leren. Ik wil mezelf verder ontwikkelen door actiever mee te praten in onbekende groepen en mijn tijd per taak beter te bewaken. Zo kan ik mijn sterke punten benutten en tegelijk aan mijn aandachtspunten werken.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

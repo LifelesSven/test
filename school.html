@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="themeStylesheet" rel="stylesheet" href="css/themes/black.css" />
+    <link rel="stylesheet" href="css/style.css?v=4" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+    <script src="js/script.js?v=4"></script>
+    <title>School</title>
+</head>
+
+<body class="school-page">
+        <div class="wholenavban">
+        <nav class="nav" style="background-color: var(--nav-background); border-bottom: 1px solid var(--nav-border); color: var(--nav-text);">
+            <div class="nav-inner">
+                <button class="nav-mobile-toggle" type="button" onclick="toggleMobileMenu()" aria-label="Toggle navigation" style="color: var(--nav-text);">&#9776;</button>
+                <div id="navbarContent">
+                    <ul>
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="overmij.html">Over mij</a></li>
+                    <li><a class="nav-link" href="work.html">Werk</a></li>
+                    <li><a class="nav-link active" href="school.html">School</a></li>
+                    <li><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                    <li><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown ml-auto">
+                    <button onclick="toggleDropdown()" class="dropbtn-minimal" style="color: var(--nav-text);">Verander de kleur</button>
+                    <div id="myDropdown" class="dropdown-content-minimal" style="background-color: var(--background); border: 1px solid var(--button-border);">
+                    <a href="#" onclick="changeCSS('black.css', this); return false;">Zwart</a>
+                    <a href="#" onclick="changeCSS('white.css', this); return false;">Wit</a>
+                    <a href="#" onclick="changeCSS('red.css', this); return false;">Rood</a>
+                    <a href="#" onclick="changeCSS('blue.css', this); return false;">Blauw</a>
+                    <a href="#" onclick="changeCSS('green.css', this); return false;">Groen</a>
+                    <a href="#" onclick="changeCSS('cyan.css', this); return false;">Cyaan</a>
+                    <a href="#" onclick="changeCSS('purple.css', this); return false;">Paars</a>
+                    <a href="#" onclick="changeCSS('pink.css', this); return false;">Roze</a>
+                    <a href="#" onclick="changeCSS('yellow.css', this); return false;">Geel</a>
+                    <a href="#" onclick="changeCSS('lightgreen.css', this); return false;">Licht Groen</a>
+                    <a href="#" onclick="changeCSS('gingerorange.css', this); return false;">Ginger Oranje</a>
+                    <a href="#" onclick="changeCSS('Vulcanic.css', this); return false;">Vulcanic</a>
+                    <a href="#" onclick="changeCSS('rainbow.css', this); return false;">Regenboog</a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobileMenu" class="nav-mobile-menu hidden" style="background-color: var(--nav-background); color: var(--nav-text); border-top: 1px solid var(--nav-border); box-shadow: 0 8px 20px var(--box-shadow-color);">
+                <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="overmij.html">Over mij</a></li>
+                <li><a class="nav-link" href="work.html">Werk</a></li>
+                <li><a class="nav-link active" href="school.html">School</a></li>
+                <li><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                <li><a class="nav-link" href="blog.html">Blog</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="text-blok">
+            <h2>Cijferlijst</h2>
+
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Blok</th>
+                        <th>Vak</th>
+                        <th>EC</th>
+                        <th>Examen</th>
+                        <th>Cijfer</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td rowspan="3" class="block-number">1</td>
+                        <td>Agile and Team Management</td>
+                        <td>5</td>
+                        <td>Assignment (individual)</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>Computer Science Basics</td>
+                        <td>5</td>
+                        <td>Written knowledge test</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>Data Science Basics</td>
+                        <td>5</td>
+                        <td>Assignment (individual)</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="3" class="block-number">2</td>
+                        <td>Foundation of Data</td>
+                        <td>5</td>
+                        <td>Assignment (individual)</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>OOP</td>
+                        <td>5</td>
+                        <td>Assignment (individual)</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>Programme- &amp; Career Orientation</td>
+                        <td>5</td>
+                        <td>Assignment</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="3" class="block-number">3</td>
+                        <td>Programming Basics</td>
+                        <td>5</td>
+                        <td>Assignment</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>Project: Applied Client Solutions</td>
+                        <td>5</td>
+                        <td>Portfolio</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>Project: Foundations</td>
+                        <td>5</td>
+                        <td>Portfolio</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="3" class="block-number">4</td>
+                        <td>Requirements Modeling</td>
+                        <td>5</td>
+                        <td>Assignment (individual)</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>Software Engineering Basics</td>
+                        <td>5</td>
+                        <td>Assignment (individual)</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>Web Application Development</td>
+                        <td>5</td>
+                        <td>Assignment (individual)</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="progress-section">
+
+                <div class="progress-header">
+                    <div>
+                        <h2>Voortgang</h2>
+                        <p>Behaalde studiepunten</p>
+                    </div>
+
+                    <span class="progress-number">0 / 60 EC</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="dynamic-progress" class="progress"></div>
+                </div>
+
+                <div class="progress-info">
+                    <span>Behaald: <strong>0 EC</strong></span>
+                    <span>Te behalen: <strong>60 EC</strong></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
